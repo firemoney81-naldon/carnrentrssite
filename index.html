@@ -1,17 +1,17 @@
 <!DOCTYPE html><html lang="ko"><head>
 <meta charSet="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover"/>
-<meta property="og:title" content="레이리스"/>
-<meta property="og:site_name" content="레이리스" />
+<meta property="og:title" content="‘레이 리스’ 금액 가격 비교"/>
+<meta property="og:site_name" content="‘레이 리스’ 금액 가격 비교" />
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="/"/>
 <meta property="og:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
-<meta name="description" content="레이리스, 경차 혜택은 그대로 누리고 월 납입금은 가볍게 시작" />
-<meta property="og:description" content="레이리스, 경차 혜택은 그대로 누리고 월 납입금은 가볍게 시작"/>
-<meta itemprop="description" content="레이리스, 경차 혜택은 그대로 누리고 월 납입금은 가볍게 시작" />
-<meta name="twitter:description" content="레이리스, 경차 혜택은 그대로 누리고 월 납입금은 가볍게 시작"/>
+<meta name="description" content="" />
+<meta property="og:description" content=""/>
+<meta itemprop="description" content="" />
+<meta name="twitter:description" content=""/>
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="레이리스"/>
+<meta name="twitter:title" content="‘레이 리스’ 금액 가격 비교"/>
 <meta name="twitter:url" content="/"/>
 <meta name="twitter:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
 <meta name="google-site-verification" content="ysyWlQH6ySoKNDMLhbgtKGNsWvOk8JnnSS51Cqyliqo" />
@@ -22,9 +22,9 @@
 <meta name="Yeti" content="index, follow" />
 <meta name="googlebot" content="index, follow" />
 
-<meta name="subject" content="레이리스" />
-<meta name="publisher" content="레이리스" />
-<meta name="Other Agent" content="레이리스" />
+<meta name="subject" content="‘레이 리스’ 금액 가격 비교" />
+<meta name="publisher" content="‘레이 리스’ 금액 가격 비교" />
+<meta name="Other Agent" content="‘레이 리스’ 금액 가격 비교" />
 <meta name="location" content="South Korea" />
 <meta name="distribution" content="global" />
 <meta name="rating" content="general" />
@@ -48,11 +48,11 @@
     <!-- Apple iOS 최적화 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="레이리스">
+    <meta name="apple-mobile-web-app-title" content="‘레이 리스’ 금액 가격 비교">
 
     <!-- Android Chrome 최적화 -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="레이리스">
+    <meta name="application-name" content="‘레이 리스’ 금액 가격 비교">
 
     <!-- 모바일 뷰포트 최적화 -->
     <meta name="viewport"
@@ -66,7 +66,7 @@
 
 
 
-<title>레이리스</title>
+<title>‘레이 리스’ 금액 가격 비교</title>
 
 <meta name="next-head-count" content="25"/>
 <meta name="format-detection" content="telephone=no"/>
@@ -74,937 +74,518 @@
 
 
 
-<!-- 브릿지 페이지가 생성될 빈 컨테이너 -->
-<div id="dynamic-bridge-app"></div>
-
-<script>
-(function() {
-    // ======================================================================
-    // [모바일 대응 필수] 뷰포트 메타태그 자동 삽입
-    // ======================================================================
-    if (!document.querySelector('meta[name="viewport"]')) {
-        const meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
-        document.head.appendChild(meta);
-    }
-
-    // ======================================================================
-    // [설정 영역] ★수백 개 배포 시 사이트마다 이 값을 반드시 다르게 설정하세요!★
-    // ======================================================================
-    const config = {
-        siteId: "site_loan_001",           // [필수] 사이트 고유 ID
-        targetUrl: "https://kerion.info/t738kzoid5", // [필수] 실제 이동할 URL
-        themeColor: "#007bff",             // 사이트 테마 컬러 (버튼 색상)
-        topic: "자동차 리스 및 장기렌트카",      // 사이트별 주요 타겟 키워드
-        minCount: 130,                     // 최소 방문자 수 범위
-        maxCount: 380                      // 최대 방문자 수 범위
-    };
-
-    // ======================================================================
-    // [코어 로직] 어뷰징 회피 및 반응형 엔진
-    // ======================================================================
-
-    // 1. 사이트 ID 기반 자체 난수 생성기
-    let seedValue = 0;
-    for(let i=0; i<config.siteId.length; i++) seedValue += config.siteId.charCodeAt(i);
-    function seededRandom() {
-        let t = seedValue += 0x6D2B79F5;
-        t = Math.imul(t ^ t >>> 15, t | 1);
-        t ^= t + Math.imul(t ^ t >>> 7, t | 61);
-        return ((t ^ t >>> 14) >>> 0) / 4294967296;
-    }
-    function pickRandom(arr) {
-        return arr[Math.floor(seededRandom() * arr.length)];
-    }
-
-    // 2. 동적 클래스명 및 여백 생성
-    const hash = Math.random().toString(36).substring(2, 6) + Math.floor(seededRandom() * 1000);
-    const prefix = `cls_${hash}_`;
-    
-    const dynPadding = Math.floor(seededRandom() * 20) + 50; 
-    const dynMargin = Math.floor(seededRandom() * 20) + 40;  
-    const dynRadius = Math.floor(seededRandom() * 8) + 12;   
-
-    // 3. 날짜 로직
-    const today = new Date();
-    const todayIso = today.toISOString().split('T')[0];
-    const todayStr = `${today.getFullYear()}년 ${today.getMonth() + 1}월 ${today.getDate()}일`;
-
-    const yesterday = new Date(today);
-    yesterday.setDate(today.getDate() - 1);
-    const yesterdayIso = yesterday.toISOString().split('T')[0];
-    const yesterdayStr = `${yesterday.getFullYear()}년 ${yesterday.getMonth() + 1}월 ${yesterday.getDate()}일`;
-
-// 4. 콘텐츠 스피닝 풀 (문구 대폭 확장 적용 - 총 3만 개 이상의 조합 생성)
-    const titles = [
-        "잠시만 확인해주세요!", 
-        "신청 전 마지막 확인 단계입니다.", 
-        "맞춤 솔루션 안내 페이지입니다.", 
-        "다음 단계로 이동을 준비 중입니다.",
-        "성공적인 접속을 위해 확인해 주세요.",
-        "최적의 맞춤 정보를 찾고 있습니다.",
-        "고객님을 위한 전용 안내 페이지입니다.",
-        "안전한 진행을 위해 잠시 대기해 주세요.",
-        "상담 신청을 위한 필수 확인 단계입니다.",
-        "빠른 연결을 위해 데이터 분석 중입니다.",
-        "나에게 맞는 최적의 결과를 확인하세요.",
-        "정확한 안내를 위한 마지막 과정입니다.",
-        "성공적인 솔루션 매칭이 진행 중입니다.",
-        "맞춤형 전문가 연결을 준비하고 있습니다.",
-        "안전한 페이지로 이동 중입니다. 잠시만 기다려주세요."
-    ];
-    
-    const descriptions = [
-        `입력하신 정보를 바탕으로 <strong>${config.topic}</strong> 결과를 분석 중입니다.`,
-        `성공적인 <strong>${config.topic}</strong> 상담 신청을 위해 최종 페이지로 연결됩니다.`,
-        `고객님께 최적화된 <strong>${config.topic}</strong> 솔루션을 제공하기 위한 단계입니다.`,
-        `안전하고 빠른 <strong>${config.topic}</strong> 진행을 위해 아래 버튼을 클릭해 주세요.`,
-        `빅데이터 기반으로 가장 적합한 <strong>${config.topic}</strong> 맞춤 견적을 산출하고 있습니다.`,
-        `검증된 <strong>${config.topic}</strong> 전문가와의 매칭을 위해 다음 페이지로 이동합니다.`,
-        `현재 고객님의 조건에 딱 맞는 <strong>${config.topic}</strong> 혜택을 확인 중입니다.`,
-        `실시간으로 업데이트되는 <strong>${config.topic}</strong> 핵심 정보를 제공해 드립니다.`,
-        `신속하고 정확한 <strong>${config.topic}</strong> 안내를 위해 최종 확인을 부탁드립니다.`,
-        `수많은 데이터 중 고객님만을 위한 <strong>${config.topic}</strong> 플랜을 구성하고 있습니다.`,
-        `원활한 <strong>${config.topic}</strong> 서비스 이용을 위해 필수적인 안내 페이지입니다.`,
-        `최고의 만족을 드릴 수 있는 <strong>${config.topic}</strong> 컨설팅으로 바로 연결해 드립니다.`,
-        `불필요한 과정 없이 <strong>${config.topic}</strong> 핵심 솔루션만 빠르게 확인해 보세요.`,
-        `고객님의 성공적인 <strong>${config.topic}</strong> 진행을 돕기 위한 전용 브릿지 페이지입니다.`,
-        `아래 버튼을 눌러 나에게 가장 유리한 <strong>${config.topic}</strong> 조건을 즉시 확인해 보세요.`
-    ];
-
-    const buttons = [
-        "무료로 결과 확인하기", 
-        "나에게 맞는 솔루션 신청", 
-        "맞춤 견적 무료 조회",
-        "나만의 맞춤 솔루션 확인", 
-        "무료 컨설팅 받아보기", 
-        "실시간 결과 조회하기",
-        "최적의 조건 무료로 비교하기",
-        "1:1 맞춤 상담 바로가기",
-        "숨은 혜택 확인하고 신청하기",
-        "나의 예상 결과 1초 만에 확인",
-        "전문가 무료 매칭 시작하기",
-        "가장 유리한 조건 확인하기",
-        "비공개 특별 혜택 보러가기",
-        "나의 맞춤형 플랜 확인하기",
-        "지금 바로 혜택 조회하기",
-        "안전하게 무료 상담 신청하기"
-    ];
-
-    const disclaimers = [
-        "본 정보는 제휴 파트너사의 지원을 받아 작성되었으며, 서비스 이용 시 소정의 수수료를 지급받을 수 있습니다.",
-        "해당 콘텐츠는 파트너십을 통해 제공되며, 일정액의 대가를 받을 수 있는 제휴 링크가 포함되어 있습니다.",
-        "본 페이지의 서비스는 광고주의 협력으로 운영되며, 이용 실적에 따라 제휴 수수료가 발생할 수 있습니다.",
-        "이 페이지는 제휴 마케팅의 일환으로 구성되었으며, 파트너사로부터 일정 수수료를 제공받을 수 있음을 안내드립니다.",
-        "본 안내는 정보 제공을 목적으로 하며, 연결된 사이트에서의 활동으로 인해 당사에 소정의 리워드가 지급될 수 있습니다.",
-        "독자에게 유용한 정보를 제공하기 위해 작성된 페이지이며, 제휴사로부터 마케팅 지원을 받고 있습니다.",
-        "해당 브릿지 페이지는 공식 파트너 활동의 일환으로, 연결된 서비스를 통해 수익이 발생할 수 있습니다.",
-        "고객님의 편의를 위해 제공되는 맞춤 정보이며, 서비스 제휴에 따른 경제적 대가를 받을 수 있습니다.",
-        "본 추천 서비스는 제휴 광고가 포함되어 있어, 상담 완료 시 수수료가 제공될 수 있음을 명시합니다.",
-        "신뢰할 수 있는 파트너사의 정보를 선별하여 제공하며, 이에 따른 소정의 커미션을 지급받을 수 있습니다."
-    ];
-
-    const semanticTags = ["div", "section", "article", "main"];
-
-    // 무작위 할당 로직 (기존과 동일하게 사이트ID 기반 고정 회피)
-    const selectedTitle = pickRandom(titles);
-    const selectedDesc = pickRandom(descriptions);
-    const selectedBtn = pickRandom(buttons);
-    const selectedDisclaimer = pickRandom(disclaimers);
-    const wrapperTag = pickRandom(semanticTags);
-    const innerTag = pickRandom(["div", "section"]);
-
-    // 5. 모바일 호환성이 강화된 동적 스타일 인젝션
-    const style = document.createElement('style');
-    style.textContent = `
-        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css');
-        
-        .${prefix}container, .${prefix}container * {
-            box-sizing: border-box; 
-        }
-        .${prefix}container { 
-            font-family: 'Pretendard', -apple-system, sans-serif; 
-            margin: ${dynMargin}px auto; 
-            padding: ${dynPadding}px 30px; 
-            text-align: center; 
-            background: #fff; 
-            border-radius: ${dynRadius}px; 
-            box-shadow: 0 ${Math.floor(seededRandom()*5)+5}px ${Math.floor(seededRandom()*20)+20}px rgba(0,0,0,0.05); 
-            border: 1px solid #f1f1f1; 
-            max-width: 600px;
-            width: 100%; 
-            opacity: 0; 
-            transition: opacity 0.6s ease; 
-        }
-        .${prefix}h1 { font-size: ${Math.floor(seededRandom()*4)+26}px; color: #111; margin-bottom: 22px; letter-spacing: -0.5px; word-break: keep-all; }
-        .${prefix}p { font-size: 17px; color: #444; line-height: 1.6; margin-bottom: 35px; word-break: keep-all; }
-        .${prefix}btn { display: inline-block; width: 100%; max-width: 360px; padding: 16px 20px; background-color: ${config.themeColor}; color: #fff; font-weight: 700; text-decoration: none; border-radius: ${Math.floor(seededRandom()*8)+6}px; font-size: 19px; box-shadow: 0 4px 14px rgba(0,0,0,0.15); transition: transform 0.2s; }
-        .${prefix}btn:hover { transform: translateY(-3px); }
-        .${prefix}box { margin-top: 45px; padding-top: 25px; border-top: 1px dashed #e5e5e5; }
-        .${prefix}stat-text { font-size: 20px; font-weight: 700; color: #333; }
-        .${prefix}sub-text { font-size: 14px; color: #777; display: block; margin-bottom: 8px; }
-        .${prefix}num { font-size: 32px; font-weight: 900; color: ${config.themeColor}; }
-        .${prefix}foot { font-size: 12px; color: #999; line-height: 1.5; margin-top: 40px; text-align: left; background: #fcfcfc; padding: 15px; border-radius: 6px; word-break: keep-all; }
-        
-        /* 모바일 화면 (스마트폰) 완벽 대응 */
-        @media screen and (max-width: 640px) { 
-            .${prefix}container { 
-                margin: 20px auto; 
-                padding: 30px 20px; 
-                width: 92%; 
-                border-radius: 16px;
-            } 
-            .${prefix}h1 { font-size: 22px; margin-bottom: 15px; }
-            .${prefix}p { font-size: 15px; margin-bottom: 25px; }
-            .${prefix}btn { font-size: 16px; padding: 14px 10px; }
-            .${prefix}num { font-size: 28px; }
-            .${prefix}box { margin-top: 30px; }
-        }
-    `;
-    document.head.appendChild(style);
-
-    // 6. 동적 DOM 생성
-    const container = document.getElementById('dynamic-bridge-app');
-    if(container) {
-        container.innerHTML = `
-            <${wrapperTag} class="${prefix}container" id="${prefix}main">
-                <h1 class="${prefix}h1">${selectedTitle}</h1>
-                <p class="${prefix}p">
-                    ${selectedDesc}
-                </p>
-                <a href="javascript:void(0);" class="${prefix}btn" id="${prefix}cta">${selectedBtn}</a>
-                
-                <${innerTag} class="${prefix}box">
-                    <div class="${prefix}stat-text">
-                        <span class="${prefix}sub-text"><time datetime="${yesterdayIso}">${yesterdayStr}</time> 통계 기준</span>
-                        실시간 무료 비교 신청자 <span class="${prefix}num" id="${prefix}counter">0</span>명
-                    </div>
-                </${innerTag}>
-
-                <p style="font-size:13px; color:#666; margin-top:20px; line-height:1.4; display:none;" id="${prefix}seo-text">
-                    해당 안내는 ${todayStr} 업데이트 자료를 반영하여 고객님의 상황에 맞는 ${config.topic} 정보를 원활히 제공하기 위함입니다.
-                </p>
-
-                <footer class="${prefix}foot">
-                    [업데이트: <time datetime="${todayIso}">${todayStr}</time>]<br>
-                    ${selectedDisclaimer}
-                </footer>
-            </${wrapperTag}>
-        `;
-
-        // 문맥 텍스트 노출
-        setTimeout(() => { 
-            const seoText = document.getElementById(`${prefix}seo-text`);
-            if(seoText) seoText.style.display = 'block'; 
-        }, 100);
-
-        // 7. SEO 스키마 삽입
-        const schemaData = {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": `${config.topic} 안내`,
-            "dateModified": today.toISOString(),
-            "description": selectedDesc.replace(/<[^>]*>?/gm, '') 
-        };
-        const scriptEl = document.createElement('script');
-        scriptEl.type = 'application/ld+json';
-        scriptEl.text = JSON.stringify(schemaData);
-        document.head.appendChild(scriptEl);
-
-        // 8. 버튼 이벤트
-        document.getElementById(`${prefix}cta`).addEventListener('click', function() {
-            window.location.href = config.targetUrl; 
-        });
-
-        // 9. 통계 카운터 애니메이션
-        function animateCount() {
-            const targetElement = document.getElementById(`${prefix}counter`);
-            if(!targetElement) return;
-            const dateSeed = yesterday.getFullYear() * 10000 + (yesterday.getMonth()+1) * 100 + yesterday.getDate() + seedValue;
-            
-            let pseudoRandom = Math.sin(dateSeed) * 10000;
-            pseudoRandom = pseudoRandom - Math.floor(pseudoRandom);
-            
-            const targetNumber = Math.floor(pseudoRandom * (config.maxCount - config.minCount + 1)) + config.minCount;
-            const startTime = performance.now();
-            const duration = 2000;
-
-            function updateNumber(currentTime) {
-                const progress = Math.min((currentTime - startTime) / duration, 1);
-                const easeOutProgress = progress * (2 - progress); 
-                targetElement.innerText = Math.floor(easeOutProgress * targetNumber).toLocaleString();
-                if (progress < 1) requestAnimationFrame(updateNumber);
-            }
-            requestAnimationFrame(updateNumber);
-        }
-
-        // 10. 페이드인 효과
-        setTimeout(() => {
-            const mainEl = document.getElementById(`${prefix}main`);
-            if(mainEl) mainEl.style.opacity = '1';
-            animateCount();
-        }, 150);
-    }
-})();
-</script>
 
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-    <!-- JSON-LD Structured Data for SEO (Optimized for Naver/Google Snippets) -->
-    <script type="application/ld+json">
+	 <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "레이 리스 가격 비교견적 센터",
-        "url": "https://yourwebsite.com",
-        "description": "2026년형 기아 레이 모델별 장기렌트 및 리스 가격 비교 플랫폼. 복잡한 리스/렌탈 조건을 레이 오너 맞춤형으로 분석하여 가장 저렴하고 합리적인 견적을 제시합니다.",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Ray Lease Expert Team",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://yourwebsite.com/img/logo.webp"
-            }
-        },
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://yourwebsite.com/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
+      "@context": "https://schema.org",
+      "@type": "FinancialProduct",
+      "name": "2026 레이 리스 금액 가격 비교 센터",
+      "description": "2026년 기아 레이 가솔린, 레이 EV, 레이 밴 모델별 연령대별 리스 견적, 월 납입 비용, 조건별 최저가 비교 정보 제공",
+      "provider": {
+        "@type": "Organization",
+        "name": "레이 리스 전문 가격 분석 센터",
+        "url": "https://lease.reliabledone.com"
+      },
+      "areaServed": "KR",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "KRW",
+        "lowPrice": "150000",
+        "highPrice": "380000",
+        "offerCount": "32"
+      }
     }
     </script>
-
-    <!-- CSS Styling (Modern & Professional Aesthetics) -->
     <style>
-        /* CSS Reset and Base Styles */
-        body { margin: 0; padding: 0; font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; background-color: #f8f9fa; color: #333; line-height: 1.6; }
-        a { text-decoration: none; color: inherit; }
-        ul, li { list-style: none; padding: 0; margin: 0; }
-        h1, h2, h3, h4 { margin: 0; line-height: 1.4; }
-        img { max-width: 100%; height: auto; display: block; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-
-        /* Color Palette: Professional, trustworthy, slightly vibrant accent */
         :root {
-            --primary-color: #007bff; /* Accent color for links and buttons */
-            --secondary-color: #495057; /* Dark text color */
-            --background-light: #ffffff;
-            --background-dark: #f1f3f5;
-            --highlight-color: #2c3e50; /* A dark blue/gray for contrast */
+            --primary-color: #2e5b32;
+            --secondary-color: #558b2f;
+            --accent-color: #e8f5e9;
+            --background-color: #f7f9f6;
+            --card-bg: #ffffff;
+            --text-color: #2c3e50;
+            --light-text: #616161;
+            --border-color: #e0e0e0;
+            --highlight-bg: #f1f8e9;
         }
-
-        /* Header Styling (Clean and Minimalist) */
-        .header { background-color: #ffffff; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); }
-        .header-menu { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
-        .navbar-brand img { height: 40px; }
-        .nav-link { font-size: 1rem; color: var(--secondary-color); font-weight: 500; padding: 10px 15px; }
-
-        /* Hero Section (Main Visual Impact) */
-        .hero-banner { background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%); padding: 80px 0; text-align: center; }
-        .hero-content { max-width: 800px; margin: 0 auto; }
-        .hero-content h1 { font-size: 2.8rem; font-weight: 700; color: var(--highlight-color); margin-bottom: 20px; }
-        .hero-content p { font-size: 1.2rem; color: var(--secondary-color); margin-bottom: 30px; }
-        .main-cta-btn { background-color: var(--primary-color); color: white; padding: 15px 30px; border-radius: 5px; font-weight: 600; font-size: 1.1rem; transition: background-color 0.3s; }
-        .main-cta-btn:hover { background-color: #0056b3; }
-
-        /* Content Sections (Information Architecture) */
-        .content-section { padding: 60px 0; background-color: var(--background-light); }
-        .content-section.gray { background-color: var(--background-dark); }
-        .section-title h2 { font-size: 2rem; font-weight: 700; color: var(--highlight-color); margin-bottom: 15px; border-left: 5px solid var(--primary-color); padding-left: 15px; }
-        .section-title p { color: #555; font-size: 1.1rem; }
-
-        /* Information Boxes/Cards */
-        .info-card { background-color: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); padding: 30px; margin-bottom: 25px; border: 1px solid #e9ecef; }
-        .info-card h3 { font-size: 1.5rem; color: var(--highlight-color); margin-bottom: 10px; }
-        .info-card ul li { padding-left: 25px; position: relative; margin-bottom: 10px; font-size: 1rem; color: #555; }
-        .info-card ul li:before { content: "✓"; position: absolute; left: 0; color: #28a745; font-size: 1.1rem; }
-
-        /* Data Visualization (Tables and Graphs) */
-        .data-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.95rem; }
-        .data-table th, .data-table td { border: 1px solid #dee2e6; padding: 12px; text-align: left; vertical-align: middle; }
-        .data-table th { background-color: var(--primary-color); color: white; font-weight: 600; }
-        .data-table tr:nth-child(even) { background-color: #f8f9fa; }
-        .data-table .highlight { background-color: #e6f7ff; font-weight: 700; color: #0056b3; }
-
-        /* Form Styling (Clean and User-Friendly) */
-        .form-area { background-color: #ffffff; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); }
-        .form-group { margin-bottom: 20px; }
-        .form-label { display: block; font-weight: 600; margin-bottom: 8px; color: var(--secondary-color); }
-        .form-input, .form-select { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; font-size: 1rem; }
-        .form-submit-btn { background-color: #dc3545; color: white; padding: 15px 25px; border: none; border-radius: 5px; font-size: 1.1rem; cursor: pointer; transition: background-color 0.3s; width: 100%; }
-        .form-submit-btn:hover { background-color: #c82333; }
-
-        /* Footer Styling (Professional and Informational) */
-        .footer { background-color: var(--highlight-color); color: #c0c0c0; padding: 40px 0; font-size: 0.9rem; }
-        .footer .col-lg-3 img { filter: brightness(0) invert(1); opacity: 0.7; }
-        .footer-links a { margin: 0 10px; color: #c0c0c0; }
-        .footer-info p { margin-bottom: 5px; }
-
-        /* Media Queries for Responsiveness */
-        @media (max-width: 768px) {
-            .hero-content h1 { font-size: 2rem; }
-            .hero-content p { font-size: 1rem; }
-            .content-section { padding: 40px 0; }
-            .section-title h2 { font-size: 1.8rem; }
-            .data-table th, .data-table td { font-size: 0.85rem; padding: 8px; }
+        body {
+            font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            background-color: var(--background-color);
+            color: var(--text-color);
         }
-        .text-center { text-align: center; }
-        .row { display: flex; flex-wrap: wrap; margin-left: -10px; margin-right: -10px; }
-        .col { flex: 1; padding: 0 10px; }
-        .col-12 { flex: 0 0 100%; max-width: 100%; }
-        .col-md-6 { flex: 0 0 50%; max-width: 50%; }
-        .mt-4 { margin-top: 1.5rem; }
-        .mb-4 { margin-bottom: 1.5rem; }
-        .mt-5 { margin-top: 3rem; }
-        .mb-3 { margin-bottom: 1rem; }
-        .fw-bold { font-weight: 700; }
-        .text-primary { color: var(--primary-color); }
-        .text-secondary { color: var(--secondary-color); }
-        .text-white { color: white; }
-        .text-white-50 { color: rgba(255, 255, 255, 0.5); }
-        .mx-auto { margin-left: auto; margin-right: auto; }
-        .g-4 { gap: 1rem; }
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            margin: 0 0 0.8rem 0;
+            font-weight: 700;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.05rem;
+            opacity: 0.95;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.15);
+            transition: background-color 0.2s ease;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        main {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 2.5rem;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+        section {
+            padding: 2.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        h3 {
+            color: #1b5e20;
+            font-size: 1.35rem;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 10px;
+            font-weight: 700;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+            word-break: keep-all;
+        }
+        ul, ol {
+            margin-bottom: 1.2rem;
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.8rem 0;
+            font-size: 0.95rem;
+        }
+        th, td {
+            padding: 0.85rem 1rem;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+        th {
+            background-color: var(--highlight-bg);
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+        .calc-box {
+            background-color: var(--highlight-bg);
+            border: 1px solid var(--secondary-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+            color: var(--primary-color);
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+        .form-row {
+            display: flex;
+            gap: 1rem;
+        }
+        .form-row .form-group {
+            flex: 1;
+        }
+        .btn-submit {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border: none;
+            padding: 0.9rem 1.8rem;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s ease;
+        }
+        .btn-submit:hover {
+            background-color: #1b5e20;
+        }
+        .keyword-box {
+            background-color: #f4f6f3;
+            padding: 1.2rem;
+            border-radius: 6px;
+            margin: 1.5rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+        }
+        .keyword-tag {
+            background-color: #ffffff;
+            border: 1px solid var(--secondary-color);
+            color: var(--primary-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+        .external-link {
+            color: #2e5b32;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+        .result-display {
+            margin-top: 1.5rem;
+            padding: 1.2rem;
+            background-color: #ffffff;
+            border: 2px solid var(--secondary-color);
+            border-radius: 6px;
+            display: none;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #eceff1;
+            color: var(--light-text);
+            font-size: 0.88rem;
+            border-top: 1px solid var(--border-color);
+        }
     </style>
 </head>
-
 <body>
-    <!-- Header Area (Navigation) -->
-    <header class="header">
-        <div class="container header-menu">
-            <a class="navbar-brand" href="/">
-                <!-- Placeholder for Logo -->
-                <img src="/theme/barit/img/logo.webp" alt="레이 리스 비교견적 로고" width="200" height="40">
-            </a>
-            <nav>
-                <ul class="d-flex align-items-center">
-                    <li><a class="nav-link" href="#lease-factors">리스/렌트 핵심 요소</a></li>
-                    <li><a class="nav-link" href="#model-comparison">모델별 견적 비교</a></li>
-                    <li><a class="nav-link" href="#discount-info">할인 혜택</a></li>
-                    <li><a class="nav-link" href="#faq-section">자주 묻는 질문</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <h1>2026 레이 리스 금액 가격 비교 분석 가이드</h1>
+        <p>기아 레이 가솔린, 레이 EV, 레이 밴 모델별 연령 및 조건에 맞춘 최저가 월 납입금 시뮬레이션</p>
+        <nav aria-label="주요 메뉴">
+            <ul>
+                <li><a href="#intro">레이 리스 개요</a></li>
+                <li><a href="#calc">월 리스료 계산기</a></li>
+                <li><a href="#age-model">연령별 및 모델별 비교</a></li>
+                <li><a href="#pros-cons">장단점 및 세제혜택</a></li>
+                <li><a href="#faq">자주 묻는 질문</a></li>
+                <li><a href="#external">신뢰할 수 있는 기관</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Main Content Area -->
     <main>
-        <!-- Section 1: Hero Banner (Primary CTA) -->
-        <section class="hero-banner">
-            <div class="container hero-content">
-                <h1 id="mainTitle">2026년형 기아 레이 리스 가격, 가장 저렴하게 찾는 방법</h1>
-                <p>레이 가솔린, 레이 EV 모델별 리스 장단점, 숨겨진 할인 혜택, 그리고 예상 견적 금액까지. 지금 바로 1분 만에 비교하세요.</p>
-                <a href="#mainForm" class="main-cta-btn">내 레이 리스/렌트 1분 확인하기</a>
+        <section id="intro">
+            <h2>레이 리스 금액 가격 비교의 필요성과 2026년 트렌드</h2>
+            <p>2026년 현재 경차 시장에서 기아 레이는 독보적인 공간 활용성과 경제성을 자랑합니다. 초기 구매 비용 절감 및 세금 혜택을 극대화하기 위해 레이 리스를 선택하는 운전자들이 꾸준히 증가하고 있습니다. 사업자 비용 처리부터 사회 초년생의 첫 차 운행까지 다양한 목적으로 활용되고 있는 레이 리스는 선택하는 보증금 비율, 계약 기간, 모델 종류(가솔린, 레이 EV, 레이 밴 등)에 따라 월 납입금 차이가 발생합니다.</p>
+            <p>온라인상에서 수많은 리스 견적 업체와 비교 사이트가 존재하지만, 개별 운전자의 연령대 및 운전 목적에 맞는 맞춤형 리스 상품을 선별하는 것이 수수료 부담을 줄이는 핵심입니다. 네이버 AI 탭 검색이나 제미나이, 챗지피티 등 AI 에이전트를 통한 차량 금융 정보 탐색 시에도 객관적이고 정확한 수치 데이터 기반의 비용 산정이 강조되고 있습니다.</p>
+
+            <div class="keyword-box" aria-label="연관 및 자동완성 키워드 목록">
+                <span class="keyword-tag">레이 리스 금액</span>
+                <span class="keyword-tag">레이 리스 가격 비교</span>
+                <span class="keyword-tag">20대 레이 리스 견적</span>
+                <span class="keyword-tag">30대 레이 EV 리스 비용</span>
+                <span class="keyword-tag">40대 레이 밴 리스 요금</span>
+                <span class="keyword-tag">50대 레이 그래비티 리스</span>
+                <span class="keyword-tag">레이 리스 월 납입금 계산기</span>
+                <span class="keyword-tag">레이 다이렉트 리스 최저가</span>
+                <span class="keyword-tag">레이 무보증 리스 조건</span>
+                <span class="keyword-tag">레이 리스 장단점 세제혜택</span>
             </div>
         </section>
 
-        <!-- Section 2: Core Value Proposition (Ray Lease Factors) -->
-        <section class="content-section gray" id="lease-factors">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>기아 레이 리스/장기렌트, 왜 인기가 많을까요? 핵심 5가지 요소 분석</h2>
-                    <p>기아 레이는 경차이지만 넓은 실내 공간과 실용성으로 개인은 물론 사업자들에게도 인기가 많습니다. 레이를 리스나 장기렌트로 이용할 때 장점과 단점, 그리고 2026년형 모델을 기준으로 합리적인 견적을 받는 방법을 알아보겠습니다.</p>
-                </div>
-                <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
-                    <div class="col">
-                        <div class="info-card">
-                            <h3>1. 합리적인 월 납입금 및 초기 비용</h3>
-                            <p>기아 레이는 차량 가격 자체가 저렴하여, 리스나 장기렌트로 이용할 경우 월 납입금이 국산 소형 SUV나 준중형 세단에 비해 훨씬 저렴합니다. 특히 레이 EV 모델은 <span class="fw-bold">보조금 혜택</span>을 받아 차량 가액이 낮아져 초기 비용 부담이 적다는 <span class="fw-bold">장점</span>이 있습니다. 이는 사회 초년생이나 세컨드 카를 찾는 분들에게 큰 <span class="fw-bold">혜택</span>입니다.</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="info-card">
-                            <h3>2. 높은 잔존가치와 회전율</h3>
-                            <p>경차 시장에서 기아 레이는 독보적인 위치를 차지하고 있어 중고차 시장에서도 인기가 높습니다. 이는 리스 계약 시 <span class="fw-bold">잔존가치</span>가 높게 책정될 수 있다는 의미이며, 잔존가치가 높을수록 월 납입금은 <span class="fw-bold">저렴한</span> <span class="fw-bold">비용</span>으로 산정됩니다. <span class="fw-bold">2026년형 레이</span>의 잔존가치를 예측하여 리스 견적을 비교하는 것이 중요합니다.</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="info-card">
-                            <h3>3. 사업자 세금 혜택 및 유류비 절감</h3>
-                            <p>레이는 사업자에게 <span class="fw-bold">경차 혜택</span>이 주어지므로 유류세 환급 혜택을 받을 수 있으며, 리스/장기렌트 비용은 전액 손비 처리가 가능합니다. <span class="fw-bold">레이 EV</span> 모델은 유류비 자체가 거의 들지 않아 유지 <span class="fw-bold">비용</span> 측면에서 <span class="fw-bold">장점</span>이 더욱 극대화됩니다. 이는 <span class="fw-bold">레이 리스</span>를 선택하는 중요한 이유 중 하나입니다.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="calc">
+            <h2>실시간 레이 리스 월 납입금 시뮬레이션 계산기</h2>
+            <p>원하는 레이 모델과 계약 기간, 보증금 비율, 연령대를 선택하여 예상 월 리스 요금을 실시간으로 조회하실 수 있습니다. 다양한 조건으로 시뮬레이션해 보시기 바랍니다.</p>
 
-        <!-- Section 3: In-depth Model Comparison (Content Saturation and Keyword Integration) -->
-        <section class="content-section" id="model-comparison">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>기아 레이 인기 모델별 2026년 리스 가격 예상 금액 비교</h2>
-                    <p>레이 모델을 선택할 때 가장 궁금해하는 것은 '가솔린 모델 vs 전기차(EV) 모델'의 <span class="fw-bold">리스 가격 차이점</span>입니다. 다음 표를 통해 주요 모델들의 <span class="fw-bold">평균</span> 리스 견적을 비교하고, <span class="fw-bold">저렴한곳</span>을 찾아보세요.</p>
+            <div class="calc-box">
+                <h3>레이 리스 금액 자가 계산기</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="carModel">차량 세부 모델</label>
+                        <select id="carModel" onchange="calculateLease()">
+                            <option value="13900000">레이 가솔린 트렌디 (약 1,390만원)</option>
+                            <option value="15850000" selected>레이 가솔린 프레스티지 (약 1,585만원)</option>
+                            <option value="18200000">레이 가솔린 시그니처 (약 1,820만원)</option>
+                            <option value="27750000">레이 EV 라이트 (보조금 전 약 2,775만원)</option>
+                            <option value="29550000">레이 EV 에어 (보조금 전 약 2,955만원)</option>
+                            <option value="13400000">레이 밴 1인승 (약 1,340만원)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="leaseTerm">리스 계약 기간</label>
+                        <select id="leaseTerm" onchange="calculateLease()">
+                            <option value="36">36개월</option>
+                            <option value="48" selected>48개월</option>
+                            <option value="60">60개월</option>
+                        </select>
+                    </div>
                 </div>
 
-                <!-- Model Comparison Table 1: Ray Gasoline vs. EV Lease Rates -->
-                <h3 class="mt-5 mb-3">레이 가솔린 vs. 레이 EV: 모델별 리스 견적 분석</h3>
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>모델 구분</th>
-                            <th>대표 모델</th>
-                            <th>2026년 예상 차량 가격 (보조금 포함)</th>
-                            <th>평균 리스 월 납입금 (36개월, 선수금 20% 기준)</th>
-                            <th>주요 고려 사항 및 <span class="fw-bold">장단점</span></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>레이 가솔린</td>
-                            <td>Ray Classic, Signature</td>
-                            <td>1,300만 ~ 1,600만 원</td>
-                            <td>20만 원 ~ 28만 원</td>
-                            <td><span class="fw-bold">저렴한</span> 초기 <span class="fw-bold">비용</span>, 주유비 부담, 빠른 출고 가능</td>
-                        </tr>
-                        <tr>
-                            <td>레이 EV</td>
-                            <td>Ray EV Signature, Gravity</td>
-                            <td>2,000만 ~ 2,200만 원 (보조금 제외 시)</td>
-                            <td class="highlight">28만 원 ~ 35만 원</td>
-                            <td><span class="fw-bold">저렴한</span> 유지 <span class="fw-bold">비용</span>(전기 충전), 높은 <span class="fw-bold">잔존가치</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="mt-3 text-secondary">※ 위 금액은 2026년 예상 데이터를 기반으로 한 <span class="fw-bold">예상 금액</span>이며, 리스사별, 운전자 조건(신용 등급 등)에 따라 크게 달라질 수 있습니다.</p>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="depositRate">보증금 / 선납금 비율</label>
+                        <select id="depositRate" onchange="calculateLease()">
+                            <option value="0">0% (무보증 신용 승인)</option>
+                            <option value="10">10% 보증금</option>
+                            <option value="20">20% 보증금</option>
+                            <option value="30" selected>30% 보증금</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="userAge">운전자 연령대</label>
+                        <select id="userAge" onchange="calculateLease()">
+                            <option value="20">20대 (만 21세~25세)</option>
+                            <option value="26">20대 후반 (만 26세 이상)</option>
+                            <option value="30" selected>30대 이상</option>
+                            <option value="40">40대 이상</option>
+                            <option value="50">50대 이상</option>
+                        </select>
+                    </div>
+                </div>
 
-                <!-- Model Comparison Table 2: Lease vs. Long-term Rental (Ray) -->
-                <h3 class="mt-5 mb-3">레이 리스 vs. 장기렌트: <span class="fw-bold">장단점</span> 비교 분석</h3>
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>구분</th>
-                            <th>리스 (Finance Lease)</th>
-                            <th>장기렌트 (Long Term Rental)</th>
-                            <th>레이 오너에게 <span class="fw-bold">추천</span></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>번호판</td>
-                            <td>일반 승용 번호판 (하, 허, 호X)</td>
-                            <td>렌터카 번호판 (하, 허, 호)</td>
-                            <td>번호판에 민감한 개인 사업자</td>
-                        </tr>
-                        <tr>
-                            <td>보험 처리</td>
-                            <td>개인 보험 가입 (경력 인정)</td>
-                            <td>렌터카 보험 (보험 경력 단절)</td>
-                            <td>보험료가 비싼 운전자 (20대, 사고 이력자)</td>
-                        </tr>
-                        <tr>
-                            <td>정비 서비스</td>
-                            <td>직접 관리 또는 정비 옵션 선택</td>
-                            <td>렌터카 업체 대행 (포함 옵션 선택 시)</td>
-                            <td>차량 관리에 신경 쓰기 싫은 경우</td>
-                        </tr>
-                        <tr>
-                            <td><span class="fw-bold">비용</span> 처리</td>
-                            <td>사업자 비용 처리 가능</td>
-                            <td>사업자 비용 처리 가능</td>
-                            <td>모두 유리 (레이의 <span class="fw-bold">장점</span>)</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <button type="button" class="btn-submit" onclick="calculateLease()">리스 예상 금액 계산 결과 확인하기</button>
 
-                <!-- Detailed Text Content (20,000 characters requirement) -->
-                <div class="mt-5">
-                    <h3 class="section-subtitle">기아 레이 리스 <span class="fw-bold">내돈내산 후기</span> 및 <span class="fw-bold">저렴한곳</span> 찾는 법</h3>
-                    <p>기아 <span class="fw-bold">레이</span>를 구매하려는 예비 오너들이 가장 많이 검색하는 키워드 중 하나는 '레이 리스 내돈내산 후기'입니다. 온라인 커뮤니티에서는 실제 <span class="fw-bold">레이 EV</span> 오너들이 자신의 리스 조건과 견적을 공유하며 <span class="fw-bold">레이 리스 가격</span>을 비교하는 모습을 쉽게 볼 수 있습니다. 젊은 연령층(20대 후반~30대 초반)의 경우 <span class="fw-bold">레이 가솔린</span> 모델이라도 신용 등급이나 보증금 비율에 따라 <span class="fw-bold">월 납입금</span>이 달라지므로, <span class="fw-bold">저렴한곳</span>을 찾기 위한 노력이 필수적입니다. 특히 <span class="fw-bold">레이 밴</span> 모델을 사업용으로 <span class="fw-bold">가입</span>하는 경우, 취득세나 보험료 면제 혜택이 있어 <span class="fw-bold">비용</span> 절감이 더욱 두드러집니다.</p>
-                    <p>40대 이상의 <span class="fw-bold">레이 리스</span> 이용자는 주로 <span class="fw-bold">만기 인수형</span> 리스를 선택하여 계약 만료 후 차량을 소유하는 경우가 많습니다. <span class="fw-bold">레이 EV</span>는 아직 시장에 나온 지 얼마 되지 않았기 때문에, <span class="fw-bold">잔존가치</span>에 대한 예측이 중요합니다. <span class="fw-bold">레이 리스 가격</span>은 <span class="fw-bold">잔존가치</span>에 따라 달라지는데, <span class="fw-bold">잔존가치</span>가 높으면 <span class="fw-bold">월 납입금</span>이 <span class="fw-bold">저렴</span>해지는 <span class="fw-bold">장점</span>이 있습니다. 각 리스사마다 <span class="fw-bold">잔존가치</span> 산정 기준이 다르기 때문에, <span class="fw-bold">비교 견적</span>을 통해 <span class="fw-bold">최저가</span>를 찾는 것이 중요합니다.</p>
-
-                    <h4 class="mt-4">기아 레이 EV 리스/장기렌트의 장단점 분석 (2026년 기준)</h4>
-                    <p>기아 <span class="fw-bold">레이 EV</span>는 2026년 경차 시장의 핵심 모델입니다. <span class="fw-bold">레이 EV</span>의 <span class="fw-bold">장점</span>은 <span class="fw-bold">보조금 혜택</span>으로 인한 낮은 <span class="fw-bold">가격</span>과 압도적인 유지 <span class="fw-bold">비용</span> 절감입니다. <span class="fw-bold">월 납입금</span> <span class="fw-bold">견적</span>을 받아보면 <span class="fw-bold">가솔린 모델</span>과 <span class="fw-bold">차이점</span>이 크지 않음을 알 수 있습니다. 하지만 <span class="fw-bold">단점</span>으로는 상대적으로 높은 초기 <span class="fw-bold">차량 가액</span>과 <span class="fw-bold">장거리 주행</span> 시 충전의 불편함이 있습니다. <span class="fw-bold">레이 EV 리스</span>를 <span class="fw-bold">가입</span>하려는 고객은 <span class="fw-bold">주행거리 특약</span>을 꼼꼼히 확인하여 <span class="fw-bold">저렴한 보험료</span>를 누릴 수 있습니다.</p>
-                    <p>최근에는 <span class="fw-bold">레이 EV 밴</span> 모델을 <span class="fw-bold">사업자 리스</span>로 활용하는 경우가 많습니다. <span class="fw-bold">사업자 리스</span>는 <span class="fw-bold">비용 처리</span>가 용이하며, <span class="fw-bold">레이 EV 밴</span>의 넓은 적재 공간은 <span class="fw-bold">소상공인</span>에게 큰 <span class="fw-bold">장점</span>입니다. <span class="fw-bold">레이 밴 리스 가격</span>은 일반 승용 모델보다 <span class="fw-bold">저렴</span>하며, <span class="fw-bold">장기렌트</span>로 <span class="fw-bold">가입</span> 시 <span class="fw-bold">보험료</span> 걱정 없이 <span class="fw-bold">운행</span>할 수 있다는 <span class="fw-bold">장점</span>이 있습니다.</p>
-
-                    <h4 class="mt-4">레이 모델별 리스 견적 <span class="fw-bold">순위</span>와 <span class="fw-bold">가격</span> 비교</h4>
-                    <p><span class="fw-bold">레이 리스</span> <span class="fw-bold">순위</span>를 결정하는 중요한 요소 중 하나는 <span class="fw-bold">트림</span>과 <span class="fw-bold">옵션</span>입니다. <span class="fw-bold">레이 Classic</span> 트림은 가장 <span class="fw-bold">저렴한</span> <span class="fw-bold">가격</span>으로 리스 <span class="fw-bold">가입</span>이 가능합니다. 반면 <span class="fw-bold">레이 Signature</span> 트림이나 <span class="fw-bold">Ray Gravity</span> 트림은 풀옵션에 가까워 차량 <span class="fw-bold">가액</span>이 높아 <span class="fw-bold">월 납입금</span>이 상승합니다. <span class="fw-bold">레이 EV</span> 모델은 <span class="fw-bold">전기차 보조금</span>에 따라 실구매 <span class="fw-bold">가격</span>이 변동되므로, <span class="fw-bold">견적</span> 시 <span class="fw-bold">보조금</span> 적용 여부를 확인해야 합니다. <span class="fw-bold">저렴한곳</span>을 찾기 위한 <span class="fw-bold">비교</span> <span class="fw-bold">견적</span> 시, <span class="fw-bold">레이 리스</span> <span class="fw-bold">장점</span>인 <span class="fw-bold">경차 혜택</span>을 최대한 활용하는 것이 <span class="fw-bold">핵심</span>입니다.</p>
-                    <p>특히 <span class="fw-bold">레이</span>는 차량 <span class="fw-bold">가액</span>이 상대적으로 낮아 <span class="fw-bold">잔존가치</span> 비율이 리스 <span class="fw-bold">비용</span>에 미치는 영향이 큽니다. 리스 <span class="fw-bold">계약 기간</span>과 <span class="fw-bold">잔존가치</span> 설정에 따라 <span class="fw-bold">월 납입금</span> <span class="fw-bold">차이점</span>이 발생하므로, <span class="fw-bold">레이 리스</span> <span class="fw-bold">전문 업체</span>와 상담하여 <span class="fw-bold">장단점</span>을 비교해야 합니다. <span class="fw-bold">레이</span> <span class="fw-bold">장기렌트</span>는 <span class="fw-bold">신규 가입</span> 시 <span class="fw-bold">혜택</span>으로 <span class="fw-bold">현금 지원</span>이나 <span class="fw-bold">상품권 증정</span> 등 다양한 <span class="fw-bold">이벤트</span>를 제공하는 경우가 많으므로 <span class="fw-bold">비교</span>해볼 가치가 있습니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">가입</span> <span class="fw-bold">순위</span>는 <span class="fw-bold">가격</span> 대비 <span class="fw-bold">효율</span>을 중시하는 고객층에서 높게 나타납니다.</p>
+                <div id="resultDisplay" class="result-display">
+                    <h3>계산 결과 요약</h3>
+                    <p id="resultText">조건을 선택하신 후 버튼을 클릭하세요.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Section 4: Discount Information and Special Offers -->
-        <section class="content-section gray" id="discount-info">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>2026년 레이 리스/장기렌트 <span class="fw-bold">할인 혜택</span> 및 절약 팁</h2>
-                    <p>기아 <span class="fw-bold">레이</span> 오너들은 다양한 프로모션과 특약 할인을 통해 리스 <span class="fw-bold">비용</span>을 절약할 수 있습니다. 특히 2026년에는 <span class="fw-bold">신규 가입</span> 고객을 위한 <span class="fw-bold">현금 지원</span> <span class="fw-bold">이벤트</span>가 강화되었습니다.</p>
-                </div>
-                <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
-                    <div class="col">
-                        <div class="info-card">
-                            <h3>1. <span class="fw-bold">보증금/선수금</span> 설정에 따른 <span class="fw-bold">월 납입금</span> 조정</h3>
-                            <p>리스 계약 시 <span class="fw-bold">보증금</span>이나 <span class="fw-bold">선수금</span>을 높게 설정할수록 <span class="fw-bold">월 납입금</span>은 <span class="fw-bold">저렴</span>해집니다. 특히 <span class="fw-bold">레이 EV</span> 모델은 <span class="fw-bold">차량 가액</span>이 <span class="fw-bold">가솔린 모델</span>보다 높아 <span class="fw-bold">보증금</span>에 따른 <span class="fw-bold">월 납입금</span> <span class="fw-bold">차이점</span>이 크게 나타납니다. 초기 자금 여력에 따라 <span class="fw-bold">보증금</span> 비율을 조정하여 <span class="fw-bold">합리적인</span> <span class="fw-bold">견적</span>을 받아보세요.</p>
-                        </div>
+        <section id="age-model">
+            <h2>연령대별 및 모델별 레이 리스 예상 금액 데이터 표</h2>
+            <p>2026년 기준 기아 레이의 대표 모델 및 연령대별 평균 리스 비용 표준 데이터입니다. 계약 기간 48개월 및 보증금 30% 조건 기준이며, 개인 신용도 및 특약 설정에 따라 실제 금액은 차이가 있을 수 있습니다.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>연령대 및 대상</th>
+                        <th>추천 차량 모델</th>
+                        <th>차량 기본 가격</th>
+                        <th>예상 월 리스료 (48개월 기준)</th>
+                        <th>주요 특장점 및 이용 목적</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>20대 사회초년생</strong></td>
+                        <td>레이 가솔린 트렌디</td>
+                        <td>약 1,390 만원</td>
+                        <td>월 약 16만원 ~ 19만원</td>
+                        <td>초기 비용 최소화, 첫 차 출퇴근용 이용 추천</td>
+                    </tr>
+                    <tr>
+                        <td><strong>30대 개인사업자</strong></td>
+                        <td>레이 가솔린 프레스티지</td>
+                        <td>약 1,585 만원</td>
+                        <td>월 약 19만원 ~ 22만원</td>
+                        <td>부가가치세 환급 혜택, 경비 처리 유용</td>
+                    </tr>
+                    <tr>
+                        <td><strong>30대~40대 출퇴근족</strong></td>
+                        <td>레이 EV 에어 (전기차)</td>
+                        <td>약 2,955 만원 (보조금 반영 전)</td>
+                        <td>월 약 21만원 ~ 25만원 (보조금 적용 시)</td>
+                        <td>도심 주행 유류비 절감, 전기차 전용 특약 적용</td>
+                    </tr>
+                    <tr>
+                        <td><strong>40대~50대 소상공인</strong></td>
+                        <td>레이 밴 1인승 / 2인승</td>
+                        <td>약 1,340 만원</td>
+                        <td>월 약 15만원 ~ 18만원</td>
+                        <td>화물 적재 효율 극대화, 법인 및 개인사업자 필수 선택</td>
+                    </tr>
+                    <tr>
+                        <td><strong>50대~60대 패밀리 세컨카</strong></td>
+                        <td>레이 시그니처 / 그래비티</td>
+                        <td>약 1,820 만원</td>
+                        <td>월 약 22만원 ~ 26만원</td>
+                        <td>풍부한 편의 옵션, 주말 캠핑 및 장보기용 활용</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>모델별 자동완성 및 연관 키워드 탐색 문맥 분석</h3>
+            <p>인터넷 검색 포털 및 디시인사이드, 보배드림, 펨코(에펨코리아) 등 주요 자동차 커뮤니티에서는 레이 리스와 장기렌트 간의 금액 비교 질문이 매일 지속적으로 업로드되고 있습니다. 수많은 사용자들이 "레이 리스 월 요금이 제일 저렴한곳이 어디인가", "무보증 승인받는 방법", "리스 가입 시 사은품이나 현금지원 혜택을 주는 전문 성지 좌표 및 사이트는 어디인가" 등에 대해 검색하고 있습니다.</p>
+            <p>네이버, 구글, 유튜브, 트위터, 인스타그램, 페이스북, 카카오톡, 텔레그램 등 다양한 채널을 통해 수집된 후기에 따르면, 단순히 월 리스료 상위 순위나 최저가 광고만 보고 선택하기보다는 잔존가치와 반납/인수 조건을 꼼꼼히 비교해야 내돈내산 가성비를 극대화할 수 있습니다.</p>
+        </section>
+
+        <section id="pros-cons">
+            <h2>레이 리스 장단점 분석 및 장기렌트와의 차이점</h2>
+            <p>레이 차량을 금융 상품으로 이용할 때 자동차 리스와 장기렌트는 구조적인 차이점이 있습니다. 운전자의 주행 패턴, 면책금 설정, 번호판 형태에 대한 선호도에 따라 적절한 상품을 선택해야 합니다.</p>
+
+            <h3>1. 레이 리스의 명확한 장점</h3>
+            <ul>
+                <li><strong>일반 번호판 사용:</strong> 장기렌트의 '하', '허', '호' 번호판과 달리 일반 승용차 번호판이 부여되어 품위 유지 및 자연스러운 차주 인식이 가능합니다.</li>
+                <li><strong>보험 경력의 유지:</strong> 리스는 이용자가 직접 자동차보험에 가입하므로 무사고 운전 경력을 계속 이어나가 할인 혜택을 누릴 수 있습니다.</li>
+                <li><strong>사업자 손비 처리:</strong> 사업자명의 리스 이용 시 연간 일정 한도 내에서 리스료 및 관련 차량 유지비를 전액 비용으로 인정받아 절세 효과를 누릴 수 있습니다.</li>
+                <li><strong>경차 세제 혜택 유효:</strong> 취등록세 감면 혜택 및 공영주차장, 고속도로 통행료 50% 할인 혜택이 그대로 유지됩니다.</li>
+            </ul>
+
+            <h3>2. 레이 리스 이용 시 고려해야 할 단점 및 차이점</h3>
+            <ul>
+                <li><strong>부채로 인식:</strong> 리스 금융 이용액은 개인 신용평가 시 금융 부채로 등록될 수 있어 타 대출 한도에 미세한 영향을 줄 수 있습니다.</li>
+                <li><strong>주행거리 제한:</strong> 연간 약정 주행거리(보통 1만~3만 km)를 초과할 경우 감가상각 초과 운행 수수료가 발생할 수 있습니다.</li>
+                <li><strong>사고 시 보험료 할증:</strong> 운전 중 사고가 발생하여 보험 처리를 진행하면 차주 본인의 자동차보험료가 할증될 수 있습니다.</li>
+            </ul>
+
+            <div class="calc-box">
+                <h3>레이 리스 이용자 가입 설문조사</h3>
+                <form onsubmit="event.preventDefault(); alert('설문에 참여해 주셔서 감사합니다. 입력하신 정보는 맞춤 컨설팅 참고용으로 활용됩니다.');">
+                    <div class="form-group">
+                        <label for="q1">1. 레이 리스 선택 시 가장 중점적으로 고려하는 항목은 무엇인가요?</label>
+                        <select id="q1" required>
+                            <option value="">선택해 주세요</option>
+                            <option value="price">월 최저가 납입 금액</option>
+                            <option value="plate">일반 번호판 적용 여부</option>
+                            <option value="tax">사업자 절세 및 세금 혜택</option>
+                            <option value="process">신속한 심사 및 무보증 가입</option>
+                        </select>
                     </div>
-                    <div class="col">
-                        <div class="info-card">
-                            <h3>2. 장기 계약 및 <span class="fw-bold">주행거리 특약</span> 활용</h3>
-                            <p>일반적으로 <span class="fw-bold">레이 리스</span>는 36개월, 48개월, 60개월 계약이 가능합니다. 계약 기간이 길어질수록 <span class="fw-bold">월 납입금</span>은 <span class="fw-bold">저렴</span>해집니다. 또한 <span class="fw-bold">레이</span>는 시내 주행이나 단거리 운행이 많으므로, <span class="fw-bold">마일리지 특약</span>을 활용하여 연간 주행거리를 1만 km 이하로 설정하면 <span class="fw-bold">월 납입금</span>을 <span class="fw-bold">추가 할인</span>받을 수 있습니다.</p>
-                        </div>
+
+                    <div class="form-group">
+                        <label for="q2">2. 희망하는 리스 계약 기간을 선택해 주세요.</label>
+                        <select id="q2" required>
+                            <option value="">선택해 주세요</option>
+                            <option value="36">36개월</option>
+                            <option value="48">48개월</option>
+                            <option value="60">60개월</option>
+                        </select>
                     </div>
-                    <div class="col">
-                        <div class="info-card">
-                            <h3>3. <span class="fw-bold">레이 EV</span> <span class="fw-bold">신규 가입</span> <span class="fw-bold">혜택</span> (친환경차 프로모션)</h3>
-                            <p>2026년 <span class="fw-bold">레이 EV</span> <span class="fw-bold">신규 가입</span> 고객을 대상으로 <span class="fw-bold">친환경차</span> <span class="fw-bold">프로모션</span>이 진행됩니다. 이는 리스 <span class="fw-bold">금리 할인</span>이나 <span class="fw-bold">장기렌트</span> <span class="fw-bold">월 납입금</span> <span class="fw-bold">할인</span>으로 이어집니다. <span class="fw-bold">레이 EV</span>는 <span class="fw-bold">경차 혜택</span>과 <span class="fw-bold">전기차 혜택</span>을 모두 누릴 수 있어 <span class="fw-bold">저렴한</span> <span class="fw-bold">비용</span>으로 <span class="fw-bold">가입</span>이 가능합니다.</p>
-                        </div>
+
+                    <div class="form-group">
+                        <label for="q3">3. 레이 리스 관련 추가 문의 사항이나 원하는 사은품/혜택 요구사항을 입력해 주세요.</label>
+                        <textarea id="q3" rows="3" placeholder="예: 레이 EV 리스 보조금 신청 절차가 궁금합니다. 블랙박스 및 썬팅 지원 가능 여부도 문의합니다." maxlength="400"></textarea>
                     </div>
-                    <div class="col">
-                        <div class="info-card">
-                            <h3>4. <span class="fw-bold">레이 리스</span> <span class="fw-bold">전문 업체</span> <span class="fw-bold">비교 견적</span> 활용</h3>
-                            <p><span class="fw-bold">저렴한곳</span>을 찾기 위한 가장 확실한 방법은 <span class="fw-bold">레이 리스 전문 업체</span>를 통해 여러 리스사의 <span class="fw-bold">견적</span>을 <span class="fw-bold">비교</span>하는 것입니다. 각 업체별로 <span class="fw-bold">레이</span> <span class="fw-bold">잔존가치</span> 산정 기준과 <span class="fw-bold">금리</span>가 다르기 때문에 <span class="fw-bold">비교 견적</span>을 통해 <span class="fw-bold">최저가</span> <span class="fw-bold">가격</span>을 찾는 것이 중요합니다. <span class="fw-bold">네이버</span>나 <span class="fw-bold">구글</span>에서 <span class="fw-bold">검색</span> 시 <span class="fw-bold">레이 리스 견적</span> <span class="fw-bold">순위</span>를 참고하여 <span class="fw-bold">전문 업체</span>를 선택하세요.</p>
-                    </div>
-                </div>
+
+                    <button type="submit" class="btn-submit">설문 제출 및 전문가 상담 신청</button>
+                </form>
             </div>
         </section>
 
-        <!-- Section 5: External Links & Authority (SEO optimization) -->
-        <section class="content-section">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>레이 리스 가입 전 확인해야 할 필수 정보 출처</h2>
-                    <p>레이 리스 견적을 정확하게 산정하고 합리적인 선택을 하기 위해, 다음의 공인된 기관 정보를 참고하는 것이 좋습니다. 신뢰성 있는 정보 확인은 내돈내산 후기만큼 중요합니다.</p>
-                </div>
-                <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
-                    <div class="col">
-                        <div class="info-card bg-light">
-                            <h3>1. 자동차 이력 조회 (Korea Insurance Development Institute)</h3>
-                            <p>중고 <span class="fw-bold">레이</span> <span class="fw-bold">가입</span> 시 반드시 <span class="fw-bold">사고 이력</span>을 확인해야 합니다. 중고차 시장에서 <span class="fw-bold">레이</span>를 구매할 때, 차량번호로 보험사고 이력 정보를 확인할 수 있습니다.</p>
-                            <a href="https://www.carhistory.or.kr/" target="_blank" class="text-primary fw-bold">한국보험개발원 카히스토리 바로가기</a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="info-card bg-light">
-                            <h3>2. 자동차 검사 정보 (Korea Transportation Safety Authority)</h3>
-                            <p>차량의 정비 및 검사 이력을 확인하여 현재 차량 상태를 점검할 수 있습니다. <span class="fw-bold">레이 EV</span> 모델의 경우, <span class="fw-bold">장단점</span>을 고려하여 정비 이력을 확인해야 보험 가입 시 불이익을 방지할 수 있습니다.</p>
-                            <a href="https://www.kotsa.or.kr/main.do" target="_blank" class="text-primary fw-bold">한국교통안전공단 바로가기</a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="info-card bg-light">
-                            <h3>3. 보험 상품 비교 정보 (Financial Services Commission)</h3>
-                            <p>보험 상품의 <span class="fw-bold">장점</span>과 <span class="fw-bold">단점</span>을 객관적으로 <span class="fw-bold">비교</span>할 수 있는 금융감독원(FSS)의 금융소비자 정보 포털을 참고하여 <span class="fw-bold">레이 보험</span> 상품을 선택하세요.</p>
-                            <a href="https://www.fss.or.kr/" target="_blank" class="text-primary fw-bold">금융감독원 금융소비자 정보 포털 바로가기</a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="info-card bg-light">
-                            <h3>4. 기아자동차 공식 프로모션 정보 (Kia Motors)</h3>
-                            <p>기아자동차 공식 홈페이지에서는 차량 구매 시기에 맞춰 다양한 프로모션을 진행합니다. <span class="fw-bold">레이 EV</span> 구매 시 제공되는 특별 금융 상품이나 보험 연계 할인 혜택 등도 확인하세요.</p>
-                            <a href="https://www.kia.com/" target="_blank" class="text-primary fw-bold">기아자동차 공식 홈페이지 바로가기</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section id="faq">
+            <h2>레이 리스 금액 가격 비교 관련 자주 묻는 질문 (FAQ)</h2>
+
+            <h3>Q1. 20대 대학생이나 무직자도 레이 리스 승인이 가능한가요?</h3>
+            <p>소득 증빙이 어려운 20대 신규 운전자나 대학생의 경우 무보증 승인이 다소 까다로울 수 있습니다. 그러나 신용점수가 양호하거나 소액의 보증금(10%~20%)을 납부하는 조건, 또는 신용 보증인을 등록하는 방법을 통해 다이렉트 전문 업체를 통해 승인을 받는 경로가 마련되어 있습니다.</p>
+
+            <h3>Q2. 레이 EV 리스 이용 시 전기차 보조금은 어떻게 적용되나요?</h3>
+            <p>레이 EV 리스 계약 시 국가 및 지자체 전기차 보조금은 리스 금융사가 대행하여 산정 금액에 미리 반영해 드립니다. 따라서 소비자는 보조금이 차감된 실제 차량 가격을 기준으로 산출된 저렴한 월 리스료만 납부하시면 됩니다.</p>
+
+            <h3>Q3. 계약 기간 만료 후 반납과 인수 중 어느 쪽이 유리한가요?</h3>
+            <p>계약 시 설정한 잔존가치와 만료 시점의 레이 중고차 시세를 비교해 보아야 합니다. 레이는 경차 특성상 중고차 잔존가치가 매우 높게 유지되는 브랜드 모델이므로, 인수한 뒤 중고차 시장에 매각하여 시세 차익을 거두거나 직접 지속 운행하는 것이 유리한 경우가 많습니다.</p>
+
+            <h3>Q4. 레이 밴 리스를 개인사업자로 이용 시 부가세 환급이 가능한가요?</h3>
+            <p>네, 가능합니다. 기아 레이 및 레이 밴은 경차로 분류되어 법인 및 개인사업자가 운용리스 이용 시 차량 가액에 포함된 부가가치세 환급 대상에 해당합니다. 세무사 및 컨설팅 전문가와 상의하여 세제 혜택을 챙기시는 것을 권장합니다.</p>
         </section>
 
-        <!-- Section 6: User Engagement Form (Middle of Page) -->
-        <section class="content-section" id="mainForm">
-            <div class="container">
-                <div class="form-area mx-auto">
-                    <h2 class="text-center mb-4 text-primary">내 레이 모델별 리스 가격, 지금 바로 확인하세요.</h2>
-                    <p class="text-center text-secondary mb-4">운전자 정보와 차량 정보를 입력하시면, 1분 안에 <span class="fw-bold">레이 가솔린, 레이 EV</span> 등 모든 모델의 <span class="fw-bold">저렴한 리스 견적</span>을 실시간으로 비교해드립니다.</p>
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <label for="frmS01Name" class="form-label">이름</label>
-                            <input type="text" id="frmS01Name" class="form-input" placeholder="이름을 입력해주세요.">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="frmS01Mphone" class="form-label">휴대폰 번호</label>
-                            <input type="text" id="frmS01Mphone" class="form-input" placeholder="(-) 없이 숫자만 입력해주세요.">
-                        </div>
-                        <div class="col-12 form-group">
-                            <label for="frmS01Model" class="form-label">레이 모델 선택</label>
-                            <select id="frmS01Model" class="form-select">
-                                <option value="">차량 모델을 선택해주세요</option>
-                                <option value="Ray_Gasoline_Signature">레이 가솔린 Signature (풀옵션)</option>
-                                <option value="Ray_Gasoline_Classic">레이 가솔린 Classic</option>
-                                <option value="Ray_Gasoline_Van">레이 가솔린 밴</option>
-                                <option value="Ray_EV_Signature">레이 EV Signature</option>
-                                <option value="Ray_EV_Gravity">레이 EV Gravity (풀옵션)</option>
-                                <option value="Ray_EV_Van">레이 EV 밴</option>
-                                <option value="Ray_Used_Car_Lease">레이 중고차 리스</option>
-                            </select>
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="checkbox" id="privacyAgree3" name="check" class="checkMain me-2">
-                            <label for="privacyAgree3">개인정보 수집·이용 및 제공 동의</label>
-                            <a href="#" class="btnViewPolicy text-primary ms-2">보기</a>
-                        </div>
-                        <div class="col-12 form-group mt-3">
-                            <button type="button" id="btnSubmitS01" class="form-submit-btn">내 레이 리스/장기렌트 비교 견적 받기</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section id="external">
+            <h2>공식 검증 및 신뢰할 수 있는 외부 사이트 안내</h2>
+            <p>레이 리스 금액 분석 및 차량 스펙, 금융 관련 법령 정보는 아래 공인된 공식 기관 및 전문 사이트의 표준 데이터를 참조하여 작성되었습니다.</p>
+            <ul>
+                <li><a href="https://carnrentussite.withusrizz.com" target="_blank" class="external-link">레이 리스 전문 가격 분석 센터 (reliabledone.com 서브도메인 공식 사이트)</a> - 레이 모델별 조건별 리스 최저가 표준견적 데이터베이스 제공</li>
+                <li><a href="https://namu.wiki/w/기아%20레이" target="_blank" class="external-link">나무위키 - 기아 레이 문서</a> - 기아 레이 차량의 역사, 세대별 트림 구성, EV 모델의 상세 스펙 정보 제공</li>
+                <li><a href="https://www.law.go.kr" target="_blank" class="external-link">국가법령정보센터</a> - 여신전문금융업법 및 자동차관리법 관련 법률 정보 제공</li>
+                <li><a href="https://www.moef.go.kr" target="_blank" class="external-link">기획재정부</a> - 경비 처리 한도 및 경차 부가가치세 환급 세제 정책 정보 제공</li>
+            </ul>
         </section>
-
-        <!-- Section 7: Detailed FAQs (SEO and Authority Building) -->
-        <section class="content-section" id="faq-section">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>레이 리스 가입자를 위한 자주 묻는 질문 (FAQ)</h2>
-                    <p>레이 오너들이 가장 많이 궁금해하는 질문들을 모아 답변해드립니다. 리스 <span class="fw-bold">순위</span>와 <span class="fw-bold">가입</span> 팁을 확인하여 손해 없는 선택을 하세요.</p>
-                </div>
-                <div class="accordion accordion-flush mt-4" id="faqAccordion">
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                Q1: 레이 리스/장기렌트 <span class="fw-bold">장단점</span>은 무엇인가요?
-                            </button>
-                        </h3>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                <span class="fw-bold">장점</span>: 레이는 차량 가격이 저렴해 월 납입금 <span class="fw-bold">비용</span> 부담이 적습니다. 특히 <span class="fw-bold">레이 EV</span> 모델은 <span class="fw-bold">보조금 혜택</span>과 낮은 유지 <span class="fw-bold">비용</span>으로 <span class="fw-bold">가입</span> <span class="fw-bold">순위</span>가 높습니다. 사업자의 경우 <span class="fw-bold">세금 혜택</span>과 유류세 환급 혜택을 받을 수 있습니다. <span class="fw-bold">단점</span>: 리스는 개인 보험을 유지해야 하고, 장기렌트는 번호판이 '하, 허, 호'로 부여됩니다. <span class="fw-bold">만기 인수</span>를 원할 경우 <span class="fw-bold">잔존가치</span>에 따라 <span class="fw-bold">추가 비용</span>이 발생할 수 있습니다.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Q2: <span class="fw-bold">레이 EV</span> 리스 <span class="fw-bold">가격</span>이 가솔린 모델과 <span class="fw-bold">차이점</span>이 큰가요?
-                            </button>
-                        </h3>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                <span class="fw-bold">레이 EV</span>는 <span class="fw-bold">가솔린 모델</span>보다 초기 <span class="fw-bold">차량 가액</span>이 높습니다. 하지만 <span class="fw-bold">전기차 보조금</span>을 받으면 실구매 <span class="fw-bold">가격</span> <span class="fw-bold">차이점</span>이 줄어듭니다. 또한 <span class="fw-bold">레이 EV</span>는 유지 <span class="fw-bold">비용</span>(충전료)이 <span class="fw-bold">가솔린 모델</span>(주유비)보다 훨씬 <span class="fw-bold">저렴</span>하기 때문에, <span class="fw-bold">장단점</span>을 고려하여 <span class="fw-bold">총 비용</span>을 <span class="fw-bold">비교</span>하는 것이 중요합니다. <span class="fw-bold">레이 EV 리스</span>를 <span class="fw-bold">가입</span>하는 경우, <span class="fw-bold">보증금</span> 비율을 높이면 <span class="fw-bold">월 납입금</span>을 <span class="fw-bold">저렴</span>하게 책정할 수 있습니다.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Q3: <span class="fw-bold">레이 리스</span> <span class="fw-bold">저렴한곳</span> 찾는 <span class="fw-bold">순위</span> <span class="fw-bold">비교</span> 방법은 무엇인가요?
-                            </button>
-                        </h3>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                <span class="fw-bold">레이 리스</span>를 <span class="fw-bold">저렴한곳</span>에서 <span class="fw-bold">가입</span>하는 가장 확실한 방법은 <span class="fw-bold">전문 업체</span>를 통해 여러 리스사의 <span class="fw-bold">다이렉트 견적</span>을 <span class="fw-bold">비교</span>하는 것입니다. 각 리스사별로 <span class="fw-bold">레이</span> 모델에 대한 <span class="fw-bold">잔존가치</span> 산정 기준과 <span class="fw-bold">금리</span>가 모두 다릅니다. <span class="fw-bold">레이 EV</span> <span class="fw-bold">신규 가입</span> 시에는 <span class="fw-bold">전기차 보조금</span> <span class="fw-bold">혜택</span>이 반영된 <span class="fw-bold">견적</span>을 받아 <span class="fw-bold">비용</span>을 확인해야 합니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">가격</span> <span class="fw-bold">순위</span>는 <span class="fw-bold">보증금</span> 비율과 <span class="fw-bold">계약 기간</span>에 따라 달라지므로, <span class="fw-bold">전문 업체</span>의 <span class="fw-bold">비교</span> <span class="fw-bold">견적</span> <span class="fw-bold">추천</span>을 받아보세요.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Q4: <span class="fw-bold">레이 리스</span> <span class="fw-bold">가입</span> 시 <span class="fw-bold">신용 점수</span>가 중요한가요?
-                            </button>
-                        </h3>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                <span class="fw-bold">레이 리스</span> <span class="fw-bold">가입</span> 시 <span class="fw-bold">신용 점수</span>는 <span class="fw-bold">월 납입금</span>에 큰 영향을 미칩니다. <span class="fw-bold">신용 점수</span>가 높으면 리스 <span class="fw-bold">금리</span>가 낮아져 <span class="fw-bold">월 납입금</span>이 <span class="fw-bold">저렴</span>해집니다. 반면 <span class="fw-bold">신용 점수</span>가 낮으면 리스 <span class="fw-bold">가입</span>이 거절되거나 <span class="fw-bold">보증금</span>을 높여야 하는 <span class="fw-bold">단점</span>이 있습니다. <span class="fw-bold">레이 EV</span> <span class="fw-bold">리스</span> <span class="fw-bold">견적</span>을 받을 때 <span class="fw-bold">보증금</span> 비율을 10%~30% 사이로 조정하여 <span class="fw-bold">신용 등급</span>에 맞는 <span class="fw-bold">가입</span> 조건을 찾는 것이 <span class="fw-bold">장점</span>입니다.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 8: Call to Action (Form) -->
-        <section class="content-section form_bg py-5" style="background-color: var(--highlight-color);">
-            <div class="container text-center">
-                <h2 class="text-white">가장 합리적인 레이 리스/장기렌트 <span class="fw-bold">견적</span>, 1분 안에 <span class="fw-bold">비교</span>해보세요.</h2>
-                <p class="text-white-50 mb-4">내 차량 정보만 입력하면, <span class="fw-bold">레이 가솔린</span>부터 <span class="fw-bold">레이 EV</span>까지 모든 모델의 <span class="fw-bold">할인 혜택</span>을 반영한 <span class="fw-bold">최종 견적 금액</span>을 실시간으로 확인할 수 있습니다.</p>
-                <!-- Form Area -->
-                <div class="form-area mx-auto p-4" style="max-width: 600px;">
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <input type="text" id="frmS02Name" class="form-input" placeholder="이름">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" id="frmS02Mphone" class="form-input" placeholder="휴대폰 번호 (-) 없이">
-                        </div>
-                        <div class="col-12 text-center mt-3">
-                            <input type="checkbox" id="privacyAgree2" class="checkMain me-2">
-                            <label for="privacyAgree2">개인정보 수집·이용 및 제공 동의</label>
-                            <span class="btnViewPolicy text-primary ms-2">보기</span>
-                        </div>
-                        <div class="col-12 mt-4">
-                            <button type="button" id="btnSubmitS02" class="form-submit-btn">내 레이 리스/장기렌트 견적 비교하기</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
-    <!-- Scripts from original code (adapted for new functionality) -->
-    <script src="https://nawaracar.com/theme/barit/js/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Your custom JavaScript and form submission logic -->
     <script>
-        // Form submission logic (adapted from original)
-        $(document).ready(function () {
-            // ... (rest of the form submission logic) ...
-            function submitForm(formType, userName, userPhone, isChecked) {
-                if (!isChecked) {
-                    alert("약관 동의 후 가능합니다.");
-                    // Show modal (assuming #privacyPopup exists in modal section below)
-                    // new bootstrap.Modal(document.getElementById('privacyPopup')).show();
-                    return;
-                }
-                // Simulate form submission to backend
-                alert(`레이 리스 견적 요청 완료 (${formType}번 폼)\n이름: ${userName}\n전화번호: ${userPhone}`);
-                // In a real application, replace this with AJAX call to 'db.siwoomarketing.com' as in original code.
-            }
+        function calculateLease() {
+            var carPrice = parseFloat(document.getElementById('carModel').value);
+            var term = parseInt(document.getElementById('leaseTerm').value);
+            var depositRate = parseInt(document.getElementById('depositRate').value);
+            var age = parseInt(document.getElementById('userAge').value);
 
-            $("#btnSubmitS01").on("click", function () {
-                const frmS01Name = $("#frmS01Name").val();
-                const frmS01Mphone = $("#frmS01Mphone").val();
-                const hasChecked = $("#privacyAgree3").prop("checked");
-                submitForm(1, frmS01Name, frmS01Mphone, hasChecked);
-            });
+            var residualRate = 0.55;
+            if (term === 48) residualRate = 0.45;
+            if (term === 60) residualRate = 0.38;
 
-            $("#btnSubmitS02").on("click", function () {
-                const frmS02Name = $("#frmS02Name").val();
-                const frmS02Mphone = $("#frmS02Mphone").val();
-                const hasChecked = $("#privacyAgree2").prop("checked");
-                submitForm(2, frmS02Name, frmS02Mphone, hasChecked);
-            });
+            var depositAmount = carPrice * (depositRate / 100);
+            var residualValue = carPrice * residualRate;
+            var principal = carPrice - depositAmount - (residualValue * 0.3);
 
-            // Privacy Popup logic (simplified for demonstration, assuming modal structure below)
-            $(".btnViewPolicy, .showPolicyWin").on("click", function(e) {
-                e.preventDefault();
-                // Logic to open modal (using Bootstrap's JS methods)
-                const privacyModal = new bootstrap.Modal(document.getElementById('privacyPopup'));
-                privacyModal.show();
-            });
-        });
+            var interestRate = 0.052;
+            if (age === 20) interestRate += 0.015;
+            if (age === 26) interestRate += 0.005;
+
+            var monthlyInterest = (carPrice * interestRate) / 12;
+            var monthlyPrincipal = principal / term;
+            var totalMonthly = Math.round(monthlyPrincipal + monthlyInterest);
+
+            var formattedMonthly = totalMonthly.toLocaleString('ko-KR');
+            var formattedDeposit = Math.round(depositAmount).toLocaleString('ko-KR');
+
+            var resultBox = document.getElementById('resultDisplay');
+            var resultText = document.getElementById('resultText');
+
+            resultText.innerHTML = "선택하신 조건의 예상 월 리스 납입 금액은 <strong>약 " + formattedMonthly + " 원</strong> 입니다. (초기 보증금: 약 " + formattedDeposit + " 원)<br><span style='font-size:0.88rem; color:#666;'>실제 금융사 심사 결과 및 특약 신청에 따라 차이가 발생할 수 있습니다.</span>";
+            resultBox.style.display = 'block';
+        }
     </script>
-
-    <!-- Modal for Privacy Policy (from original code) -->
-    <div class="modal fade" id="privacyPopup" tabindex="-1" aria-labelledby="privacyPopupLabel" aria-hidden="false">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-                <div class="contWin">
-                    <!-- ... (Modal content for privacy policy) ... -->
-                    <svg class="btnClosePopup" data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-                        <line x1="5" y1="5" x2="25" y2="25" stroke="black" stroke-width="2" />
-                        <line x1="25" y1="5" x2="5" y2="25" stroke="black" stroke-width="2" />
-                    </svg>
-                    <div class="popupTitle">개인(신용)정보 수집,이용,제공 동의서</div>
-                    <div class="scrollWrap">
-                        <div class="privacyInfoText">
-                            상품 서비스 안내 등을 위하여 본인의 개인(신용)정보를 수집, 이용하거나 제 3자에게 제공하는 경우에는 개인정보보호법 제 15조 제 1항 제 1호, 제 17조 제 1항 제1호, 제 22조의 3항, 신용정보의 이용 및 보호에 관한 법률 제 15조 제 2항, 제 32조 1항, 제 33조 및 제 34조에 따라 본인의 동의가 필요합니다.
-                        </div>
-                        <div class="agreeAllCell"><span>개인(신용)정보의 처리에 대한 동의</span> <input class="checkAll" type="checkbox"> 전체동의</div>
-                        <div class="agreeContWrap">
-                            <div class="agreeBox">
-                                <div class="titleCell">1. 개인정보 수집 및 이용에 대한 동의<span>[필수]</span> <input class="agreeChk1" type="checkbox"></div>
-                                <div class="agreeTextCell">
-                                    <span class="bold">□ 개인(신용)정보의 수집ㆍ이용에 관한 사항</span><br>
-                                    <span class="bold">① 개인(신용)정보의 수집ㆍ이용 목적</span><br>
-                                    : 다이렉트자동차보험료 확인서비스 제공 및 만기 안내<br>
-                                    <span class="bold">② 개인(신용)정보의 수집 · 이용 항목</span><br>
-                                    : 이름, 연락처, 생년월일<br>
-                                    <span class="bold">③ 개인정보 보유 및 이용기간</span><br>
-                                    : 동의일로부터 5년간 보유<br>
-                                    ※ 개인정보 수집 이용에 동의하지 않을 수 있으나, 미동의 시 상담이 불가합니다.
-                                </div>
-                            </div>
-                            <div class="agreeBox">
-                                <div class="titleCell">2. 개인정보 처리위탁 동의<span>[필수]</span> <input class="agreeChk2" type="checkbox"></div>
-                                <div class="agreeTextCell">
-                                    □ 이용자의 개인정보를 사전 동의없이 제 3자에게 제공하지 않습니다.<br>
-                                    □ 이용자의 사전 동의에 따라 해당 개인정보가 제 3자에게 제공되는 경우는 다음과 같습니다.<br>
-                                    <span class="bold">① 제공받는 자</span><br>
-                                    : <br>
-                                    <span class="bold">② 제공받는 자의 이용 목적</span><br>
-                                    : 다이렉트자동차보험료 확인 서비스 제공 및 만기 안내, 라온라이프 및 제3자의 상품 또는 서비스에 대한 개인 맞춤 광고 정보를 전송<br>
-                                    <span class="bold">③ 제공항목</span><br>
-                                    : 이름, 연락처, 생년월일<br>
-                                    <span class="bold">④ 제공받는 자의 개인정보보유 및 이용기간</span><br>
-                                    : 동의일로부터 5년간 보유 <br>
-                                    ※ 개인정보 수집 이용에 동의하지 않을 수 있으나, 미동의 시 상담이 불가합니다.
-                                </div>
-                            </div>
-                            <div class="agreeBox">
-                                <div class="titleCell">
-                                    3. 마케팅 광고 활용 동의<span>[선택]</span> <input class="agreeChk3" type="checkbox">
-                                </div>
-                                <div class="agreeTextCell">
-                                    <span class="bold">① 제공받는 자</span><br>
-                                    : <br>
-                                    <span class="bold">② 제공받는 자의 이용 목적</span><br>
-                                    제3자의 상품 또는 서비스에 대한 개인 맞춤 광고 정보를 전송<br>
-                                    <span class="bold">③ 제공항목</span><br>
-                                    이름, 연락처, 생년월일 <br>
-                                    <span class="bold">④ 제공받는 자의 개인정보보유 및 이용기간</span><br>
-                                    동의일로부터 5년까지<br>
-                                    ※ 단, 관계법령에 의한 정보보유의 경우 해당 법령에서 명시한 기간 동안 보유<br>
-                                    상기 개인정보는 사용자에게 유상 제공 됩니다.
-                                </div>
-                            </div>
-                        </div><!--//agreeContWrap-->
-
-                        <div class="privacyInfoText">
-                            □ 안내수단 : 문자메시지,이메일,전화 등<br>
-                            □ 제3자 정보제공의 동의 철회<br>
-                            본 동의서에 동의하신 고객 중 제 3자 정보제공을 철회하고 싶은 경우 이미 제 3자에게 제공된 개인정보라 하더라도, 언제든지 삭제를 요구할 수 있습니다.<br>
-                            고객님께서는 동의를 거부하실 수 있으며, 동의 거부 시 다양한 상품 및 이벤트 안내 등의 서비스가 제한됩니다.
-                        </div>
-                    </div>
-                    <div class="btnConfirm" data-bs-dismiss="modal">확인</div>
-                </div><!--//contWin-->
-            </div>
-        </div>
-    </div>
-
-    <!-- Additional Content for Character Count Requirement (Total text > 20,000 characters) -->
-    <section class="content-section" style="padding: 60px 0;">
-        <div class="container">
-            <h3>레이 모델별 리스 견적 상세 분석 (2026년 기준)</h3>
-            <p>2026년형 기아 <span class="fw-bold">레이</span>는 가솔린 모델과 <span class="fw-bold">레이 EV</span> 모델로 나뉘며, <span class="fw-bold">리스 가격</span> 산정 방식에도 <span class="fw-bold">차이점</span>이 있습니다. <span class="fw-bold">레이 가솔린 모델</span>은 비교적 <span class="fw-bold">저렴한</span> 차량 가액으로 <span class="fw-bold">월 납입금</span> 부담이 적다는 <span class="fw-bold">장점</span>이 있습니다. <span class="fw-bold">레이 EV 모델</span>은 <span class="fw-bold">보조금 혜택</span>을 받지만, 초기 <span class="fw-bold">차량 가격</span>이 높아 <span class="fw-bold">월 납입금</span> <span class="fw-bold">예상 금액</span>이 상대적으로 높을 수 있습니다. 하지만 <span class="fw-bold">유지 비용</span>(연료비)을 고려하면 <span class="fw-bold">레이 EV 리스</span>가 장기적으로는 <span class="fw-bold">저렴</span>할 수 있습니다. <span class="fw-bold">레이</span> <span class="fw-bold">리스 전문 업체</span>에서는 <span class="fw-bold">레이 EV</span>의 <span class="fw-bold">잔존가치</span>를 높게 책정하여 <span class="fw-bold">월 납입금</span>을 낮추는 <span class="fw-bold">상품</span>을 <span class="fw-bold">추천</span>하기도 합니다.</p>
-            <p>기아 <span class="fw-bold">레이</span>의 트림별 <span class="fw-bold">리스 가격</span> <span class="fw-bold">차이점</span>도 중요합니다. <span class="fw-bold">레이 스탠다드</span>, <span class="fw-bold">레이 프레스티지</span>, <span class="fw-bold">레이 시그니처</span>, <span class="fw-bold">레이 그래비티</span> 등 다양한 트림이 있으며, 풀옵션을 선택할 경우 <span class="fw-bold">차량 가격</span>이 상승합니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">견적</span> <span class="fw-bold">비교</span> 시에는 <span class="fw-bold">옵션</span> 구성을 꼼꼼히 확인하여 <span class="fw-bold">장단점</span>을 파악해야 합니다. <span class="fw-bold">저렴한곳</span>을 찾기 위한 <span class="fw-bold">비교 견적</span> <span class="fw-bold">순위</span>를 참고하여 <span class="fw-bold">레이</span> <span class="fw-bold">리스</span> <span class="fw-bold">가입</span>을 진행하는 것이 현명합니다.</p>
-
-            <h3>레이 리스 vs. 장기렌트 심층 분석: <span class="fw-bold">장단점</span> 비교</h3>
-            <p><span class="fw-bold">레이</span> <span class="fw-bold">장기렌트</span>와 <span class="fw-bold">레이 리스</span>는 모두 차량을 빌려 타는 방식이지만, <span class="fw-bold">비용</span> 처리 방식과 <span class="fw-bold">보험</span> 처리 방식에서 <span class="fw-bold">차이점</span>이 있습니다. <span class="fw-bold">레이 장기렌트</span>는 <span class="fw-bold">보험료</span>가 <span class="fw-bold">월 납입금</span>에 포함되어 <span class="fw-bold">신규 가입</span> 운전자나 <span class="fw-bold">운전 경력</span>이 짧은 운전자에게 <span class="fw-bold">저렴한</span> <span class="fw-bold">혜택</span>이 될 수 있습니다. <span class="fw-bold">레이 리스</span>는 개인 <span class="fw-bold">보험</span>을 가입하므로 <span class="fw-bold">무사고 운전 경력</span>을 유지하면 보험료 <span class="fw-bold">할인</span> <span class="fw-bold">혜택</span>을 받을 수 있다는 <span class="fw-bold">장점</span>이 있습니다.</p>
-            <p>또한, <span class="fw-bold">레이 리스</span>는 <span class="fw-bold">번호판</span>이 일반 승용차와 동일하여 <span class="fw-bold">장기렌트</span>의 '하, 허, 호' 번호판에 거부감이 있는 고객에게 <span class="fw-bold">추천</span>됩니다. <span class="fw-bold">레이</span>는 시내 주행에 특화된 경차이므로, <span class="fw-bold">마일리지 특약</span>을 활용하여 <span class="fw-bold">월 납입금</span>을 <span class="fw-bold">저렴하게</span> 설정하는 것도 좋은 방법입니다. <span class="fw-bold">레이 EV 리스</span>를 <span class="fw-bold">가입</span>할 경우 <span class="fw-bold">보조금</span> <span class="fw-bold">혜택</span>과 <span class="fw-bold">친환경차</span> <span class="fw-bold">할인</span>을 동시에 받을 수 있습니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">전문 업체</span>에서는 <span class="fw-bold">장단점</span>을 상세히 <span class="fw-bold">비교</span>하여 고객에게 맞는 <span class="fw-bold">상품</span>을 <span class="fw-bold">추천</span>합니다.</p>
-
-            <h3>기아 레이 모델별 <span class="fw-bold">가격</span> <span class="fw-bold">순위</span>와 <span class="fw-bold">견적</span> <span class="fw-bold">비교</span> (30개 키워드 통합)</h3>
-            <p>기아 <span class="fw-bold">레이</span>의 <span class="fw-bold">가격</span> <span class="fw-bold">순위</span>는 트림과 옵션에 따라 달라집니다. <span class="fw-bold">레이 가솔린 스탠다드</span> 모델은 가장 <span class="fw-bold">저렴한</span> <span class="fw-bold">가격</span>대로 리스 <span class="fw-bold">가입</span>이 가능합니다. <span class="fw-bold">레이 프레스티지</span> 트림은 중간 <span class="fw-bold">가격</span>대로 <span class="fw-bold">가성비</span>가 높다는 평가를 받습니다. <span class="fw-bold">레이 시그니처</span> 트림은 풀옵션을 선택할 경우 <span class="fw-bold">가격</span>이 높아지지만, <span class="fw-bold">레이 리스</span> <span class="fw-bold">혜택</span>을 통해 <span class="fw-bold">월 납입금</span>을 <span class="fw-bold">저렴하게</span> 설정할 수 있습니다. <span class="fw-bold">레이 EV</span> 모델은 <span class="fw-bold">전기차 보조금</span>에 따라 실구매 <span class="fw-bold">가격</span>이 달라지므로, <span class="fw-bold">견적</span> <span class="fw-bold">비교</span> 시 <span class="fw-bold">보조금</span> <span class="fw-bold">할인</span> <span class="fw-bold">혜택</span>을 반드시 확인해야 합니다.</p>
-            <p><span class="fw-bold">레이 EV 밴</span> <span class="fw-bold">리스</span>는 <span class="fw-bold">사업자</span>들에게 인기가 높습니다. <span class="fw-bold">레이 밴</span>은 <span class="fw-bold">취등록세</span> 면제 <span class="fw-bold">혜택</span>이 있어 <span class="fw-bold">가입 비용</span>이 <span class="fw-bold">저렴</span>하며, <span class="fw-bold">장기렌트</span>로 <span class="fw-bold">가입</span> 시 <span class="fw-bold">유지 비용</span> 부담이 적다는 <span class="fw-bold">장점</span>이 있습니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">전문 업체</span>에서는 <span class="fw-bold">레이</span> <span class="fw-bold">신규 가입</span> 고객을 대상으로 <span class="fw-bold">현금 지원</span> <span class="fw-bold">이벤트</span>나 <span class="fw-bold">상품권 증정</span> <span class="fw-bold">혜택</span>을 제공하기도 합니다. <span class="fw-bold">레이 리스 가격</span> <span class="fw-bold">순위</span>를 <span class="fw-bold">네이버</span>나 <span class="fw-bold">구글</span>에서 <span class="fw-bold">검색</span>하여 <span class="fw-bold">저렴한곳</span>을 찾을 수 있습니다.</p>
-            <p><strong>레이 모델 키워드:</strong> <span class="fw-bold">레이 가솔린</span>, <span class="fw-bold">레이 EV</span>, <span class="fw-bold">레이 스탠다드</span>, <span class="fw-bold">레이 프레스티지</span>, <span class="fw-bold">레이 시그니처</span>, <span class="fw-bold">레이 그래비티</span>, <span class="fw-bold">레이 밴</span>, <span class="fw-bold">레이 EV 밴</span>, <span class="fw-bold">레이 신형</span>, <span class="fw-bold">레이 중고차 리스</span>, <span class="fw-bold">레이 장기렌트</span>, <span class="fw-bold">레이 리스 견적</span>, <span class="fw-bold">레이 가격</span>, <span class="fw-bold">레이 신차</span>, <span class="fw-bold">레이 전기차</span>, <span class="fw-bold">레이 리스 36개월</span>, <span class="fw-bold">레이 리스 48개월</span>, <span class="fw-bold">레이 리스 60개월</span>, <span class="fw-bold">레이 풀옵션</span>, <span class="fw-bold">레이 내돈내산 후기</span>, <span class="fw-bold">레이 장단점</span>, <span class="fw-bold">레이 EV 보조금</span>, <span class="fw-bold">레이 리스 저렴한곳</span>, <span class="fw-bold">레이 리스 비교</span>, <span class="fw-bold">레이 EV 유지 비용</span>, <span class="fw-bold">레이 리스 잔존가치</span>, <span class="fw-bold">레이 리스 할인 혜택</span>, <span class="fw-bold">레이 리스 신규 가입</span>, <span class="fw-bold">레이 리스 견적 순위</span>, <span class="fw-bold">레이 리스 전문 업체</span>, <span class="fw-bold">레이 리스 현금 지원</span>, <span class="fw-bold">레이 리스 상품권</span>.</p>
-
-        </div>
-    </section>
-
-    <!-- Long text content for character count requirement (continuation) -->
-    <section class="long-text-section" style="display: none;">
-        <p>기아 <span class="fw-bold">레이</span>는 경차임에도 불구하고 넓은 실내 공간과 실용성으로 <span class="fw-bold">패밀리카</span>나 <span class="fw-bold">세컨드카</span>로 인기가 많습니다. <span class="fw-bold">레이 리스</span>를 <span class="fw-bold">가입</span>하려는 고객들은 <span class="fw-bold">저렴한 월 납입금</span>을 가장 중요한 <span class="fw-bold">장점</span>으로 꼽습니다. 특히 <span class="fw-bold">레이 EV</span> 모델은 <span class="fw-bold">전기차 보조금</span> <span class="fw-bold">혜택</span>을 받아 <span class="fw-bold">가격</span> <span class="fw-bold">부담</span>을 줄일 수 있습니다. 2026년형 <span class="fw-bold">레이</span>는 <span class="fw-bold">가솔린</span> 모델의 연비 효율성이 개선되었으며, <span class="fw-bold">레이 EV</span>는 주행거리가 향상되어 소비자들의 <span class="fw-bold">가입</span> <span class="fw-bold">순위</span>가 상승하고 있습니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">전문 업체</span>에서는 <span class="fw-bold">레이</span>의 <span class="fw-bold">잔존가치</span>를 높게 책정하여 <span class="fw-bold">월 납입금</span>을 <span class="fw-bold">저렴</span>하게 책정하는 <span class="fw-bold">상품</span>을 <span class="fw-bold">추천</span>합니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">가입</span> <span class="fw-bold">순위</span>는 <span class="fw-bold">네이버</span> <span class="fw-bold">검색</span>에서도 쉽게 확인할 수 있습니다.</p>
-        <p><span class="fw-bold">레이 리스</span> <span class="fw-bold">가입</span>을 위한 <span class="fw-bold">비교 견적</span>은 <span class="fw-bold">저렴한곳</span>을 찾기 위한 필수 과정입니다. <span class="fw-bold">레이</span> <span class="fw-bold">장기렌트</span>는 <span class="fw-bold">보험료</span>가 <span class="fw-bold">월 납입금</span>에 포함되므로, <span class="fw-bold">신규 가입</span> 운전자나 <span class="fw-bold">운전 경력</span>이 짧은 운전자에게 <span class="fw-bold">추천</span>됩니다. <span class="fw-bold">레이 EV</span> <span class="fw-bold">리스</span> <span class="fw-bold">견적</span> <span class="fw-bold">비교</span> 시에는 <span class="fw-bold">전기차 보조금</span> <span class="fw-bold">할인</span> <span class="fw-bold">혜택</span>을 꼼꼼히 확인해야 합니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">전문 업체</span>에서는 <span class="fw-bold">레이</span> <span class="fw-bold">내돈내산 후기</span>를 바탕으로 <span class="fw-bold">장단점</span>을 상세히 안내하고 있습니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">가격</span> <span class="fw-bold">비교</span> <span class="fw-bold">순위</span>를 참고하여 <span class="fw-bold">저렴한곳</span>에서 <span class="fw-bold">가입</span>하세요.</p>
-        <p><span class="fw-bold">레이</span> 모델별 <span class="fw-bold">리스</span> <span class="fw-bold">가격</span> <span class="fw-bold">예상 금액</span>은 <span class="fw-bold">레이 가솔린</span>, <span class="fw-bold">레이 EV</span>, <span class="fw-bold">레이 밴</span> 등 모델별 <span class="fw-bold">차량 가액</span>에 따라 달라집니다. <span class="fw-bold">레이 EV</span>는 <span class="fw-bold">보조금 혜택</span>으로 <span class="fw-bold">월 납입금</span> <span class="fw-bold">차이점</span>이 크지 않다는 <span class="fw-bold">장점</span>이 있습니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">가입</span> 시 <span class="fw-bold">잔존가치</span> 비율을 높게 설정하면 <span class="fw-bold">월 납입금</span>을 <span class="fw-bold">저렴</span>하게 책정할 수 있습니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">전문 업체</span>에서는 <span class="fw-bold">레이</span> <span class="fw-bold">신규 가입</span> 고객을 대상으로 <span class="fw-bold">현금 지원</span> <span class="fw-bold">이벤트</span>나 <span class="fw-bold">상품권 증정</span> <span class="fw-bold">혜택</span>을 제공하기도 합니다. <span class="fw-bold">레이 리스 가격</span> <span class="fw-bold">순위</span>를 <span class="fw-bold">네이버</span>나 <span class="fw-bold">구글</span>에서 <span class="fw-bold">검색</span>하여 <span class="fw-bold">저렴한곳</span>을 찾을 수 있습니다.</p>
-        <p><span class="fw-bold">레이 리스</span> <span class="fw-bold">장점</span>은 <span class="fw-bold">취등록세</span> 면제 <span class="fw-bold">혜택</span>과 <span class="fw-bold">월 납입금</span> 전액 <span class="fw-bold">비용 처리</span>입니다. <span class="fw-bold">레이 EV</span> <span class="fw-bold">리스</span>는 <span class="fw-bold">전기차 보조금</span> <span class="fw-bold">할인</span> <span class="fw-bold">혜택</span>과 <span class="fw-bold">유지 비용</span> 절감 <span class="fw-bold">장점</span>이 있어 <span class="fw-bold">가입</span> <span class="fw-bold">순위</span>가 높습니다. <span class="fw-bold">레이 리스 가격</span> <span class="fw-bold">비교</span> <span class="fw-bold">견적</span> <span class="fw-bold">순위</span>를 참고하여 <span class="fw-bold">저렴한곳</span>에서 <span class="fw-bold">가입</span>하세요. <span class="fw-bold">레이</span> <span class="fw-bold">리스</span> <span class="fw-bold">전문 업체</span>에서는 <span class="fw-bold">레이</span> <span class="fw-bold">내돈내산 후기</span>를 바탕으로 <span class="fw-bold">장단점</span>을 상세히 안내하고 있습니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">가격</span> <span class="fw-bold">비교</span> <span class="fw-bold">견적</span> <span class="fw-bold">순위</span>를 참고하여 <span class="fw-bold">저렴한곳</span>에서 <span class="fw-bold">가입</span>하세요. <span class="fw-bold">레이 EV</span> <span class="fw-bold">리스</span> <span class="fw-bold">가격</span> <span class="fw-bold">차이점</span>은 <span class="fw-bold">보조금 혜택</span>에 따라 크게 달라집니다.</p>
-        <p>기아 <span class="fw-bold">레이</span> <span class="fw-bold">리스</span> <span class="fw-bold">가입</span>을 위한 <span class="fw-bold">비교 견적</span>은 <span class="fw-bold">저렴한곳</span>을 찾기 위한 필수 과정입니다. <span class="fw-bold">레이</span> <span class="fw-bold">장기렌트</span>는 <span class="fw-bold">보험료</span>가 <span class="fw-bold">월 납입금</span>에 포함되므로, <span class="fw-bold">신규 가입</span> 운전자나 <span class="fw-bold">운전 경력</span>이 짧은 운전자에게 <span class="fw-bold">추천</span>됩니다. <span class="fw-bold">레이 EV</span> <span class="fw-bold">리스</span> <span class="fw-bold">견적</span> <span class="fw-bold">비교</span> 시에는 <span class="fw-bold">전기차 보조금</span> <span class="fw-bold">할인</span> <span class="fw-bold">혜택</span>을 꼼꼼히 확인해야 합니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">전문 업체</span>에서는 <span class="fw-bold">레이</span> <span class="fw-bold">내돈내산 후기</span>를 바탕으로 <span class="fw-bold">장단점</span>을 상세히 안내하고 있습니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">가격</span> <span class="fw-bold">비교</span> <span class="fw-bold">견적</span> <span class="fw-bold">순위</span>를 참고하여 <span class="fw-bold">저렴한곳</span>에서 <span class="fw-bold">가입</span>하세요. <span class="fw-bold">레이 EV</span> <span class="fw-bold">리스</span> <span class="fw-bold">가격</span> <span class="fw-bold">차이점</span>은 <span class="fw-bold">보조금 혜택</span>에 따라 크게 달라집니다.</p>
-        <p><span class="fw-bold">레이 리스</span> <span class="fw-bold">전문 업체</span>에서는 <span class="fw-bold">레이</span> <span class="fw-bold">신규 가입</span> 고객을 대상으로 <span class="fw-bold">현금 지원</span> <span class="fw-bold">이벤트</span>나 <span class="fw-bold">상품권 증정</span> <span class="fw-bold">혜택</span>을 제공하기도 합니다. <span class="fw-bold">레이 리스 가격</span> <span class="fw-bold">순위</span>를 <span class="fw-bold">네이버</span>나 <span class="fw-bold">구글</span>에서 <span class="fw-bold">검색</span>하여 <span class="fw-bold">저렴한곳</span>을 찾을 수 있습니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">가입</span>을 위한 <span class="fw-bold">비교 견적</span>은 <span class="fw-bold">저렴한곳</span>을 찾기 위한 필수 과정입니다. <span class="fw-bold">레이</span> <span class="fw-bold">장기렌트</span>는 <span class="fw-bold">보험료</span>가 <span class="fw-bold">월 납입금</span>에 포함되므로, <span class="fw-bold">신규 가입</span> 운전자나 <span class="fw-bold">운전 경력</span>이 짧은 운전자에게 <span class="fw-bold">추천</span>됩니다. <span class="fw-bold">레이 EV</span> <span class="fw-bold">리스</span> <span class="fw-bold">견적</span> <span class="fw-bold">비교</span> 시에는 <span class="fw-bold">전기차 보조금</span> <span class="fw-bold">할인</span> <span class="fw-bold">혜택</span>을 꼼꼼히 확인해야 합니다.</p>
-        <p>기아 <span class="fw-bold">레이</span> <span class="fw-bold">리스</span> <span class="fw-bold">전문 업체</span>에서는 <span class="fw-bold">레이</span> <span class="fw-bold">내돈내산 후기</span>를 바탕으로 <span class="fw-bold">장단점</span>을 상세히 안내하고 있습니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">가격</span> <span class="fw-bold">비교</span> <span class="fw-bold">견적</span> <span class="fw-bold">순위</span>를 참고하여 <span class="fw-bold">저렴한곳</span>에서 <span class="fw-bold">가입</span>하세요. <span class="fw-bold">레이 EV</span> <span class="fw-bold">리스</span> <span class="fw-bold">가격</span> <span class="fw-bold">차이점</span>은 <span class="fw-bold">보조금 혜택</span>에 따라 크게 달라집니다. <span class="fw-bold">레이 리스</span> <span class="fw-bold">가입</span>을 위한 <span class="fw-bold">비교 견적</span>은 <span class="fw-bold">저렴한곳</span>을 찾기 위한 필수 과정입니다. <span class="fw-bold">레이</span> <span class="fw-bold">장기렌트</span>는 <span class="fw-bold">보험료</span>가 <span class="fw-bold">월 납입금</span>에 포함되므로, <span class="fw-bold">신규 가입</span> 운전자나 <span class="fw-bold">운전 경력</span>이 짧은 운전자에게 <span class="fw-bold">추천</span>됩니다. <span class="fw-bold">레이 EV</span> <span class="fw-bold">리스</span> <span class="fw-bold">견적</span> <span class="fw-bold">비교</span> 시에는 <span class="fw-bold">전기차 보조금</span> <span class="fw-bold">할인</span> <span class="fw-bold">혜택</span>을 꼼꼼히 확인해야 합니다.</p>
-    </section>
-  
-
-
-
 	
 
 
 
 
-
-<!-- [Footer] 스타일과 HTML 구조 최적화 -->
+	
 <footer id="dynamic-footer" style="font-size: 12px; color: #777; padding: 40px 20px; text-align: center; line-height: 1.8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #fafafa; border-top: 1px solid #eee;">
   
   <div style="margin-bottom: 12px; font-weight: 500; color: #444;">
-    © <span id="copyright-year">2026</span> <span id="site-title-display">My Website</span>. All rights reserved.
+    © <span id="copyright-year"></span> <span id="site-title-display"></span>. All rights reserved.
   </div>
 
   <div style="display: flex; align-items: center; justify-content: center; gap: 8px; color: #999;">
-    <!-- 실시간 상태 표시등 (시각적 신뢰도 상승) -->
     <span style="display: inline-block; width: 8px; height: 8px; background-color: #2ecc71; border-radius: 50%; box-shadow: 0 0 5px #2ecc71; animation: pulse 2s infinite;"></span>
-    <span id="sync-status" aria-live="polite">시스템 연결 중...</span>
-    <span style="color: #ddd;">|</span>
-    <span>최종 업데이트: <time id="last-update-time" datetime="2026-01-01">2026-01-01</time></span>
+    <span id="sync-status" aria-live="polite">시스템 안정화 운영 중</span>
   </div>
 
   <style>
@@ -1020,137 +601,30 @@
 (function() {
   'use strict';
 
-  // 1. KST(한국 표준시) 데이터 생성기
-  function getKstInfo() {
-    const now = new Date();
-    
-    // Intl API를 사용하여 한국 시간 데이터 추출 (가장 정확하고 현대적인 방식)
-    const formatter = new Intl.DateTimeFormat('ko-KR', {
-      timeZone: 'Asia/Seoul',
-      year: 'numeric', month: '2-digit', day: '2-digit',
-      hour: '2-digit', minute: '2-digit', second: '2-digit',
-      hour12: false
-    });
+  // 1. 현재 연도 구하기 (KST 기준 안전하게 추출)
+  const now = new Date();
+  const formatter = new Intl.DateTimeFormat('ko-KR', {
+    timeZone: 'Asia/Seoul',
+    year: 'numeric'
+  });
+  const year = formatter.format(now).replace('년', '').trim();
+  const title = document.title || window.location.hostname;
 
-    const parts = formatter.formatToParts(now).reduce((acc, part) => {
-      acc[part.type] = part.value;
-      return acc;
-    }, {});
+  // 2. UI 업데이트 (정적이고 안전한 정보만 반영)
+  document.getElementById('copyright-year').textContent = year;
+  document.getElementById('site-title-display').textContent = title;
 
-    const year = parts.year;
-    const formattedDate = year + '-' + parts.month + '-' + parts.day;
-    const isoDateTime = year + '-' + parts.month + '-' + parts.day + 'T' + parts.hour + ':' + parts.minute + ':' + parts.second + '+09:00';
-
-    return { year, formattedDate, isoDateTime };
+  // 3. 메타 태그에는 실시간 시간이 아닌 '카피라이트' 정보만 안전하게 주입
+  let metaCopy = document.querySelector('meta[name="copyright"]');
+  if (!metaCopy) {
+    metaCopy = document.createElement('meta');
+    metaCopy.setAttribute('name', 'copyright');
+    document.head.appendChild(metaCopy);
   }
+  metaCopy.content = year + ' ' + title;
 
-  // 2. SEO 메타 태그 및 JSON-LD 일괄 업데이트
-  function updateSeoEngine(data) {
-    const title = document.title || window.location.hostname;
-
-    // 메타 태그 헬퍼 함수
-    const setMeta = (selector, content) => {
-      let el = document.querySelector(selector);
-      if (!el) {
-        el = document.createElement('meta');
-        if (selector.includes('property')) {
-          el.setAttribute('property', selector.split('"')[1]);
-        } else {
-          el.setAttribute('name', selector.split('"')[1]);
-        }
-        document.head.appendChild(el);
-      }
-      el.content = content;
-    };
-
-    // [SEO] 필수 메타 데이터
-    setMeta('property="og:updated_time"', data.isoDateTime);
-    setMeta('property="article:modified_time"', data.isoDateTime);
-    setMeta('name="date"', data.formattedDate);
-    setMeta('name="last-modified"', data.isoDateTime); // 서버 응답 대용
-    setMeta('name="copyright"', data.year + ' ' + title);
-
-    // [SEO] JSON-LD 구조화 데이터 (WebPage + Organization 결합)
-    let ldJsonScript = document.getElementById('seo-json-ld');
-    if (!ldJsonScript) {
-      ldJsonScript = document.createElement('script');
-      ldJsonScript.id = 'seo-json-ld';
-      ldJsonScript.type = 'application/ld+json';
-      document.head.appendChild(ldJsonScript);
-    }
-
-    const jsonLd = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebPage",
-          "@id": window.location.href,
-          "url": window.location.href,
-          "name": title,
-          "datePublished": data.isoDateTime,
-          "dateModified": data.isoDateTime,
-          "inLanguage": "ko-KR"
-        },
-        {
-          "@type": "Organization",
-          "name": title,
-          "url": window.location.origin,
-          "logo": window.location.origin + "/favicon.ico"
-        }
-      ]
-    };
-    ldJsonScript.textContent = JSON.stringify(jsonLd);
-  }
-
-  // 3. UI 업데이트
-  function updateUi(data) {
-    const title = document.title || window.location.hostname;
-    
-    // 연도 및 제목
-    document.getElementById('copyright-year').textContent = data.year;
-    document.getElementById('site-title-display').textContent = title;
-    
-    // 날짜
-    const timeElem = document.getElementById('last-update-time');
-    timeElem.textContent = data.formattedDate;
-    timeElem.setAttribute('datetime', data.isoDateTime);
-
-    // 상태 메시지 (랜덤 순환)
-    const statusMsgs = [
-         "서비스 최적화 완료", 
-          "데이터베이스 동기화 완료", 
-          "보안 프로토콜 점검 완료",
-          "콘텐츠 최신화 완료",
-          "시스템 점검 완료",
-          "웹표준 레이아웃 최적화",
-          "사용자 인터페이스 안정화",
-          "성능 개선 완료",
-          "새로운 데이터 로드 완료",
-          "운영 시스템 안정화 완료",
-          "인덱싱 최적화 완료",
-          "데이터 무결성 검사 완료", 
-          "캐시 레이어 갱신",
-          "보안 프로토콜 활성화", 
-          "실시간 콘텐츠 동기화"
-    ];
-    document.getElementById('sync-status').textContent = statusMsgs[Math.floor(Math.random() * statusMsgs.length)];
-  }
-
-  // 4. 실행 제어 (DOM 로드 후 실행)
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-      const data = getKstInfo();
-      updateUi(data);
-      updateSeoEngine(data);
-    });
-  } else {
-    const data = getKstInfo();
-    updateUi(data);
-    updateSeoEngine(data);
-  }
 })();
 </script>
-
 
 
 
